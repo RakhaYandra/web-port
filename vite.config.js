@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: "build",
   },
-  base: "/vite-deploy/",
+  base: "/react-portfolio/",
   css: {
     modules: {
       localsConvention: "camelCase",
