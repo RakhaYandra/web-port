@@ -1,26 +1,32 @@
 [
   {
-    "title": "Project A",
+    "title": "AI & ML based Health Diagnosis",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "AI & ML based Health Diagnosis to predict alzheimers, pneumonia, and fetal health using machine learning and consulting healthcare with AI. Built with React, Express, Node, and MongoDB.",
+    "skills": ["React", "Express", "Node", "MongoDB", "AI", "ML"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/Owen-Caudinata/RPL-AI-ML-Health-Diagnosis.git"
   },
   {
-    "title": "Project B",
+    "title": "Campkit",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",    "skills": ["React", "Express", "PostgreSQL"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/RakhaYandra/campkit.git"
   },
   {
-    "title": "Project C",
+    "title": "Horticultural Production Forecasting Dashboard",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",    "skills": ["React", "Express", "ML", "MongoDB", "AI"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git"
+  },
+  {
+    "title": "To Do List",
+    "imageSrc": "projects/project.png",
+    "description": "A simple To Do List app made using Python.",    
+    "skills": ["Python"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git"
   }
 ]

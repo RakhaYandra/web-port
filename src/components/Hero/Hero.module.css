@@ -20,17 +20,33 @@
 }
 
 .title {
-  font-size: 72px;
+  font-size: 48px; 
   font-weight: 900;
-  margin-bottom: 33px;
+  margin-bottom: 25px;  
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
+    rgba(255, 255, 255, 1) 80%, 
+    rgba(255, 255, 255, 0) 100%  
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
 }
 
 .description {
@@ -51,7 +67,7 @@
 }
 
 .heroImg {
-  width: 50%;
+  width: 35%;
   z-index: 1;
 
   animation-name: floating;

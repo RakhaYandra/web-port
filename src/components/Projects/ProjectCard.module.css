@@ -3,26 +3,39 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Pastikan konten tersebar merata */
   border-radius: 10px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
-  max-width: 345px;
+  width: 400px; /* Ukuran tetap */
+  height: 600px; /* Ukuran tetap */
+  overflow: hidden; /* Sembunyikan konten yang meluap */
 }
 
 .image {
   margin-bottom: 26px;
+  width: 100%;
+  height: 250px; /* Ukuran tetap */
+  object-fit: cover;
 }
 
 .title {
-  font-size: 25px;
+  font-size: 30px; /* Ukuran tetap */
   font-weight: 700;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 20px; /* Ukuran tetap */
   font-weight: 400;
+  overflow: hidden; /* Sembunyikan konten yang meluap */
+  text-overflow: ellipsis; /* Tambahkan elipsis untuk teks yang meluap */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Batasi jumlah baris */
+  -webkit-box-orient: vertical;
+  line-clamp: 3; /* Batasi jumlah baris */
+  box-orient: vertical;
 }
 
 .skills {
@@ -36,7 +49,7 @@
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 20px; /* Ukuran tetap */
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
@@ -53,7 +66,7 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 20px; /* Ukuran tetap */
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
