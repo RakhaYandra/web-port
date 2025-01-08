@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: "build",
   },
-  base: "/react-portfolio/",
+  base: "/web-port/",
   css: {
     modules: {
       localsConvention: "camelCase",
