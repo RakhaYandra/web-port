@@ -49,28 +49,38 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci --frozen-lockfile
-          npm ls vite || echo "Vite will be available after install"
-          npm ls eslint || echo "ESLint will be available after install"
+          echo "Verifying installation..."
+          npm list --depth=0 | grep -E "(vite|eslint)" || echo "Some packages may not be listed"
 
       - name: Verify installed packages
         run: |
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
-          echo "Checking installed packages..."
-          npm ls vite --depth=0 || echo "Vite not found in dependencies"
-          echo "PATH: $PATH"
-          echo "node_modules/.bin contents:"
-          ls -la node_modules/.bin/ | head -10
+          echo "Working directory: $(pwd)"
+          echo "Checking node_modules structure..."
+          ls -la node_modules/.bin/ | grep -E "(vite|eslint)" || echo "Binary files not found in .bin"
+          echo "Checking if vite is available via npx..."
+          npx vite --version || echo "Vite not available via npx"
 
       - name: Run linting
         run: |
-          ./node_modules/.bin/eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 || echo "Linting failed, but continuing..."
+          if [ -f "./node_modules/.bin/eslint" ]; then
+            ./node_modules/.bin/eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0
+          else
+            npx eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0
+          fi
         continue-on-error: true
 
       - name: Build project
         run: |
           echo "Starting build process..."
-          ./node_modules/.bin/vite build
+          if [ -f "./node_modules/.bin/vite" ]; then
+            echo "Using direct path to vite..."
+            ./node_modules/.bin/vite build
+          else
+            echo "Using npx to run vite..."
+            npx vite build
+          fi
           echo "Build completed successfully"
 
       - name: Verify build output
