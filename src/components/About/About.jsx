@@ -53,9 +53,9 @@ export const About = () => {
               technology to make life better and more efficient.
             </p>
             <p>
-              Currently in my final year, I&apos;m actively seeking opportunities to
-              contribute to innovative projects while continuing to learn and
-              grow in the ever-evolving tech landscape.
+              Currently in my final year, I&apos;m actively seeking
+              opportunities to contribute to innovative projects while
+              continuing to learn and grow in the ever-evolving tech landscape.
             </p>
           </div>
 

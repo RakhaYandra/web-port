@@ -80,8 +80,8 @@ export const Contact = () => {
           <p
             className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}
           >
-            Ready to bring your ideas to life? Let&apos;s start a conversation and
-            create something amazing together.
+            Ready to bring your ideas to life? Let&apos;s start a conversation
+            and create something amazing together.
           </p>
         </div>
 
