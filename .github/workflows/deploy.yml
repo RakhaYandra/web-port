@@ -36,54 +36,40 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # Remove npm cache to avoid conflicts
-          # cache: "npm"
-
-      # Remove cache step to avoid conflicts
-      # - name: Cache node modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: ~/.npm
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-
+          cache: "npm"
 
       - name: Install dependencies
         run: |
-          echo "Cleaning npm cache..."
-          npm cache clean --force
-          echo "Cleaning any existing node_modules..."
-          rm -rf node_modules package-lock.json || true
-          echo "Installing dependencies from scratch..."
-          npm install
-          echo "Verifying installation..."
-          npm list --depth=0 | grep -E "(vite|eslint)" || echo "Some packages may not be listed"
+          echo "Installing dependencies with npm ci..."
+          npm ci
+          echo "Verifying vite installation..."
+          npm list vite
+          echo "Verifying eslint installation..."
+          npm list eslint
 
       - name: Verify installed packages
         run: |
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
           echo "Working directory: $(pwd)"
-          echo "Package.json scripts:"
-          cat package.json | grep -A 15 '"scripts"'
+          echo "Package.json devDependencies:"
+          cat package.json | grep -A 10 '"devDependencies"'
           echo "Checking node_modules/.bin directory:"
-          ls -la node_modules/.bin/ || echo "node_modules/.bin not found"
-          echo "Checking if vite exists:"
-          ls -la node_modules/.bin/vite || echo "vite binary not found"
-          echo "NPX vite version test:"
-          npx vite --version || echo "npx vite failed"
+          ls -la node_modules/.bin/ | grep -E "(vite|eslint)" || echo "Binary files not found"
+          echo "Testing vite command directly:"
+          node_modules/.bin/vite --version || echo "Direct vite call failed"
 
       - name: Run linting
         run: |
-          echo "Running linting with npx..."
-          npx eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 || echo "Linting failed, but continuing..."
+          echo "Running linting..."
+          node_modules/.bin/eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 || echo "Linting failed, but continuing..."
         continue-on-error: true
 
       - name: Build project
         run: |
           echo "Starting build process..."
-          echo "Using npx vite build..."
-          npx vite build
+          echo "Using direct vite binary..."
+          node_modules/.bin/vite build
           echo "Build completed successfully"
 
       - name: Verify build output
