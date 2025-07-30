@@ -36,18 +36,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
+          # Remove npm cache to avoid conflicts
+          # cache: "npm"
 
-      - name: Cache node modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      # Remove cache step to avoid conflicts
+      # - name: Cache node modules
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: |
+          echo "Cleaning npm cache..."
+          npm cache clean --force
           echo "Cleaning any existing node_modules..."
           rm -rf node_modules package-lock.json || true
           echo "Installing dependencies from scratch..."
@@ -66,20 +70,20 @@ jobs:
           ls -la node_modules/.bin/ || echo "node_modules/.bin not found"
           echo "Checking if vite exists:"
           ls -la node_modules/.bin/vite || echo "vite binary not found"
-          echo "Checking PATH:"
-          echo $PATH
+          echo "NPX vite version test:"
+          npx vite --version || echo "npx vite failed"
 
       - name: Run linting
         run: |
-          echo "Running linting with npm script..."
-          npm run lint || echo "Linting failed, but continuing..."
+          echo "Running linting with npx..."
+          npx eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 || echo "Linting failed, but continuing..."
         continue-on-error: true
 
       - name: Build project
         run: |
           echo "Starting build process..."
-          echo "Using npm run build script..."
-          npm run build
+          echo "Using npx vite build..."
+          npx vite build
           echo "Build completed successfully"
 
       - name: Verify build output
