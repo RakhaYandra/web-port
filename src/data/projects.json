@@ -10,23 +10,33 @@
   {
     "title": "Campkit",
     "imageSrc": "projects/project.png",
-    "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",    "skills": ["React", "Express", "PostgreSQL"],
+    "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",
+    "skills": ["React", "Express", "PostgreSQL", "JavaScript", "CSS"],
     "demo": "https://www.example.com",
     "source": "https://github.com/RakhaYandra/campkit.git"
   },
   {
     "title": "Horticultural Production Forecasting Dashboard",
     "imageSrc": "projects/project.png",
-    "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",    "skills": ["React", "Express", "ML", "MongoDB", "AI"],
+    "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",
+    "skills": ["React", "Express", "ML", "MongoDB", "AI"],
     "demo": "https://www.example.com",
     "source": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git"
   },
   {
     "title": "To Do List",
     "imageSrc": "projects/project.png",
-    "description": "A simple To Do List app made using Python.",    
+    "description": "A simple To Do List app made using Python.",
     "skills": ["Python"],
     "demo": "https://www.example.com",
     "source": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git"
+  },
+  {
+    "title": "Photobooth",
+    "imageSrc": "projects/project.png",
+    "description": "A web application that allows users to take photos and apply filters. Built with Next.js and React.",
+    "skills": ["Next.js", "React", "Tailwind CSS"],
+    "demo": "https://github.com/RakhaYandra/photobooth.git",
+    "source": "https://github.com/RakhaYandra/photobooth.git"
   }
 ]
