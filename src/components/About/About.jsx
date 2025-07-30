@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -39,7 +37,7 @@ export const About = () => {
         <div className={styles.aboutContent}>
           <div className={styles.description}>
             <p>
-              I'm a passionate{" "}
+              I&apos;m a passionate{" "}
               <span className={styles.highlight}>
                 Information Systems student
               </span>{" "}
@@ -55,7 +53,7 @@ export const About = () => {
               technology to make life better and more efficient.
             </p>
             <p>
-              Currently in my final year, I'm actively seeking opportunities to
+              Currently in my final year, I&apos;m actively seeking opportunities to
               contribute to innovative projects while continuing to learn and
               grow in the ever-evolving tech landscape.
             </p>

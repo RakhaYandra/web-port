@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import styles from "./Navbar.module.css";
 
@@ -80,7 +80,7 @@ export const Navbar = () => {
           href="mailto:rakhaputrapebriyandra272@gmail.com"
           className={styles.ctaButton}
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -57,7 +57,7 @@ export const Hero = () => {
           className={`${styles.heroHeading} ${isLoaded ? styles.fadeInUp : ""}`}
         >
           <h1 className={styles.title}>
-            Hi, I'm <span className={styles.titleName}>Rakha Putra</span>
+            Hi, I&apos;m <span className={styles.titleName}>Rakha Putra</span>
             <br />
             <span className={styles.titleRole}>Web Developer</span>
           </h1>
@@ -93,7 +93,7 @@ export const Hero = () => {
             href="mailto:rakhaputrapebriyandra272@gmail.com"
             className={styles.primaryCta}
           >
-            <span>Let's Collaborate</span>
+            <span>Let&apos;s Collaborate</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
               <path
                 d="M7 17L17 7M17 7H7M17 7V17"

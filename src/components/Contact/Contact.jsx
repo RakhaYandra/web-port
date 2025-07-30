@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -75,12 +75,12 @@ export const Contact = () => {
             Available for new opportunities
           </div>
           <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p
             className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}
           >
-            Ready to bring your ideas to life? Let's start a conversation and
+            Ready to bring your ideas to life? Let&apos;s start a conversation and
             create something amazing together.
           </p>
         </div>

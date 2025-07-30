@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import styles from "./Projects.module.css";
 
@@ -27,15 +27,15 @@ export const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Extract unique categories from projects
-  const categories = [
-    "all",
-    ...new Set(
-      projects.flatMap((project) =>
-        project.skills.map((skill) => skill.toLowerCase())
-      )
-    ),
-  ];
+  // Extract unique categories from projects (commented out as not used)
+  // const categories = [
+  //   "all",
+  //   ...new Set(
+  //     projects.flatMap((project) =>
+  //       project.skills.map((skill) => skill.toLowerCase())
+  //     )
+  //   ),
+  // ];
 
   const filteredProjects =
     filter === "all"
