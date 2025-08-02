@@ -8,8 +8,8 @@
     radial-gradient(ellipse 800px 600px at 30% 10%, rgba(34, 197, 94, 0.08) 0%, transparent 60%),
     radial-gradient(ellipse 600px 400px at 70% 90%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
     linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 30%, #16213e 70%, #0f0f1a 100%);
-  overflow: hidden;
-  z-index: 1;
+  overflow: visible;
+  z-index: 50;
 }
 
 /* Background Elements */
@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 .networkPattern {
@@ -80,7 +80,10 @@
   text-align: center;
   margin-bottom: 4rem;
   position: relative;
-  z-index: 2;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 .title {
@@ -114,9 +117,21 @@
 /* Content */
 .content {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   max-width: 1000px;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Force Visibility for Production Debugging */
+.forceVisible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible !important;
+  display: block !important;
 }
 
 /* Timeline */
@@ -189,7 +204,7 @@
   position: relative;
   background: rgba(15, 23, 42, 0.9);
   border-radius: 20px;
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  border: 2px solid rgba(34, 197, 94, 0.5);
   padding: 2rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -197,6 +212,11 @@
   overflow: hidden;
   width: calc(50% - 40px);
   margin-left: auto;
+  z-index: 50;
+  min-height: 150px;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .timelineItem:nth-child(even) .organizationCard {
