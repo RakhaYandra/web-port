@@ -195,8 +195,8 @@ jobs:
       - name: 🎉 Deployment complete
         run: |
           echo "🎉 Portfolio deployed successfully!"
-          echo "� Site URL: ${{ steps.deployment.outputs.page_url }}"
-          echo "� Your portfolio is now live and accessible!"
+          echo "🔗 Site URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "📱 Your portfolio is now live and accessible!"
           echo ""
           echo "🔧 If you encounter any issues:"
           echo "   1. Check the repository settings -> Pages"
