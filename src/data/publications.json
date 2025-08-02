@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Performance Evaluation of a Modular Laravel–Flask Backend for Real-Time Air Quality Forecasting in IoT-Based Systems",
+    "authors": ["Rakha Putra Pebri Yandra", "Hanif Fakhrurroja", "Dita Pramesti"],
+    "venue": "2025 International Conference on Data Science and Its Applications (ICoDSA)",
+    "publicationDate": "July 2025",
+    "type": "Conference Paper",
+    "abstract": "Conventional air quality monitoring systems often face challenges related to high costs, complex infrastructure, and limited spatial coverage, which restrict their ability to deliver timely and location-specific data. To address these shortcomings, this study introduces a scalable, modular backend system that integrates Laravel for backend logic, PostgreSQL for relational data management, and a Flask-based machine learning (ML) microservice for forecasting the Air Quality Index (AQI) using real-time data from distributed IoT sensors. The system adopts a four-layer architecture—Device, Service, Data, and Presentation—that promotes modularity, maintainability, and future scalability. AQI predictions are generated using the Prophet time-series model and presented through a responsive web dashboard equipped with role-based access control, catering to a broad range of users including the Ministry of Environment and Forestry (KLHK), local environmental agencies (DLH), and the general public. The system was developed using the Agile methodology, enabling continuous testing and iterative refinement. API performance testing showed an average response time of 557 milliseconds and a throughput of 1.34 requests per second. However, stress testing revealed a 24.18% error rate under heavy loads, highlighting the need for performance optimization. Overall, the research demonstrates the feasibility of ML-enhanced systems for proactive air quality management, with future enhancements targeting mobile integration, real-world deployment, and advanced analytics.",
+    "doi": "-",
+    "url": "https://drive.google.com/file/d/1Z4_tWwwTOBKctpZ0fA3uc7A2huIOJwB5/view?usp=sharing",
+    "keywords": ["Air Quality Monitoring", "API Performance", "Backend System", "IoT", "Machine Learning"],
+    "status": "Published",
+    "imageSrc": "publications/conference.png"
+  }
+]

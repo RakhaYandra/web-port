@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Keprofesian Enterprise Infrastructure Management (EIM)",
+    "role": "Laboratory Assistant",
+    "startDate": "March 2023",
+    "endDate": "May 2025",
+    "description": "Contributed to lab operations, event documentation, and coordination. Currently serving as Head of Design Subdivision in Human Capital Development Division, managing social media content and visual strategies.",
+    "website": "https://www.instagram.com/eimresearchlab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "achievements": [
+      "Operational Division Staff for EIM",
+      "Documentation and coordination for EIM Research Fellowship Night 2024",
+      "Head of Design Subdivision, Human Capital Development Division"
+    ],
+    "imageSrc": "organizations/eim.png"
+  },
+  {
+    "name": "SEARCH Telkom University",
+    "role": "Member Of Supervisory Board",
+    "startDate": "January 2024",
+    "endDate": "January 2025",
+    "description": "Oversaw strategic planning and provided guidance to management. Conducted evaluations and facilitated communication to support long-term goals.",
+    "website": "https://www.instagram.com/searchtelkomunv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "achievements": [
+      "Provided strategic oversight to new management",
+      "Facilitated board-management communication",
+      "Contributed to organizational policy development"
+    ],
+    "imageSrc": "organizations/search.png"
+  },
+  {
+    "name": "UKM Fotografi Telkom University",
+    "role": "Head of Logistics Department",
+    "startDate": "December 2023",
+    "endDate": "December 2024",
+    "description": "Led logistics planning, procurement, and distribution for the organization. Ensured alignment with team goals and improved operational efficiency.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Created comprehensive logistics plans",
+      "Aligned logistics operations with organizational goals",
+      "Improved process efficiency through monitoring and evaluation"
+    ],
+    "imageSrc": "organizations/uft.png"
+  },
+  {
+    "name": "GDSC Telkom University Bandung",
+    "role": "Member of Mobile & Web Development Study Group",
+    "startDate": "December 2023",
+    "endDate": "December 2024",
+    "description": "Participated in workshops and study sessions focusing on mobile and web development using modern tools supported by Google.",
+    "website": "https://www.instagram.com/gdgoctelkomunivbdg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "achievements": [
+      "Attended hands-on development workshops",
+      "Explored tools for mobile & web development",
+      "Built foundational understanding of development best practices"
+    ],
+    "imageSrc": "organizations/gdsc.png"
+  },
+  {
+    "name": "ESD Laboratory",
+    "role": "Member of UI/UX Study Group",
+    "startDate": "January 2024",
+    "endDate": "December 2024",
+    "description": "Joined study group discussions and practice sessions on user interface and user experience design principles.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Engaged in UI/UX design sessions",
+      "Learned basic principles of user-centered design",
+      "Participated in design critique and collaboration"
+    ],
+    "imageSrc": "organizations/esd.png"
+  },
+  {
+    "name": "SEARCH Telkom University",
+    "role": "Human Resources Staff",
+    "startDate": "January 2023",
+    "endDate": "January 2024",
+    "description": "Managed member recruitment, data collection, performance evaluations, and division coordination to ensure organizational effectiveness.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Handled cabinet recruitment and data management",
+      "Evaluated team performance regularly",
+      "Improved inter-division collaboration"
+    ],
+    "imageSrc": "organizations/search.png"
+  },
+  {
+    "name": "UKM Fotografi Telkom University",
+    "role": "Public Relation Staff",
+    "startDate": "January 2023",
+    "endDate": "December 2023",
+    "description": "Maintained internal and external communication. Served as Vice Project Leader for Anniversary 2023 and Logistics Staff for Photography Exhibition 2023.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Vice Project Leader of Photography Unit Anniversary 2023",
+      "Handled logistics for Photography Exhibition 2023",
+      "Built relationships to enhance unit visibility"
+    ],
+    "imageSrc": "organizations/uft.png"
+  },
+  {
+    "name": "Java Business Competition 2023",
+    "role": "Project Officer",
+    "startDate": "January 2023",
+    "endDate": "September 2023",
+    "description": "Led the formation and coordination of the organizing committee. Oversaw full-cycle event execution and ensured its overall success.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Formed and led the organizing committee",
+      "Successfully managed full event cycle",
+      "Strengthened leadership and project management skills"
+    ],
+    "imageSrc": "organizations/jbc.png"
+  },
+  {
+    "name": "Search Telkom University",
+    "role": "Public Relation Youth Cabinet",
+    "startDate": "September 2022",
+    "endDate": "November 2022",
+    "description": "Actively contributed as a youth staff in the Public Relation Division, supported publication and documentation activities for Open Mind SEARCH 2022, and led the Welcoming Search 2022 Committee.",
+    "website": "https://telkomuniversity.ac.id",
+    "achievements": [
+      "Served as Public Relation Youth Staff",
+      "Staffed the Publication and Documentation Division for Open Mind SEARCH 2022",
+      "Led the Welcoming Search 2022 Committee as Project Leader"
+    ],
+    "imageSrc": "organizations/search.png"
+  }
+]

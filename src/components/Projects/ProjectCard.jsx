@@ -2,7 +2,18 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
+  project: {
+    title,
+    imageSrc,
+    description,
+    skills,
+    demo,
+    source,
+    workType,
+    duration,
+    teamSize,
+    advisor,
+  },
 }) => {
   return (
     <div className={styles.container}>
@@ -61,6 +72,10 @@ export const ProjectCard = ({
       <div className={styles.content}>
         <div className={styles.header}>
           <h3 className={styles.title}>{title}</h3>
+          <div className={styles.projectMeta}>
+            <span className={styles.workType}>{workType}</span>
+            {duration && <span className={styles.duration}>{duration}</span>}
+          </div>
           <div className={styles.links}>
             <a
               href={demo}
@@ -100,6 +115,24 @@ export const ProjectCard = ({
         </div>
 
         <p className={styles.description}>{description}</p>
+
+        {/* Additional project details */}
+        {(teamSize || advisor) && (
+          <div className={styles.additionalInfo}>
+            {teamSize && (
+              <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Team:</span>
+                <span className={styles.infoValue}>{teamSize}</span>
+              </div>
+            )}
+            {advisor && (
+              <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Advisor:</span>
+                <span className={styles.infoValue}>{advisor}</span>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className={styles.skills}>
           {skills.map((skill, id) => (

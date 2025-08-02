@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,21 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const mainMenuItems = [
+    { href: "#about", label: "About", number: "01" },
+    { href: "#education", label: "Education", number: "02" },
+    { href: "#skills", label: "Skills", number: "03" },
+    { href: "#experience", label: "Experience", number: "04" },
+    { href: "#projects", label: "Projects", number: "05" },
+    { href: "#contact", label: "Contact", number: "06" },
+  ];
+
+  const moreMenuItems = [
+    { href: "#certificates", label: "Certificates", icon: "🏆" },
+    { href: "#organizations", label: "Organizations", icon: "🏢" },
+    { href: "#publications", label: "Publications", icon: "📚" },
+  ];
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
@@ -43,35 +59,67 @@ export const Navbar = () => {
             }`}
             onClick={() => setMenuOpen(false)}
           >
-            <li>
-              <a href="#about" className={styles.menuItem}>
-                <span className={styles.menuNumber}>01</span>
-                <span>About</span>
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className={styles.menuItem}>
-                <span className={styles.menuNumber}>02</span>
-                <span>Skills</span>
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className={styles.menuItem}>
-                <span className={styles.menuNumber}>03</span>
-                <span>Experience</span>
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className={styles.menuItem}>
-                <span className={styles.menuNumber}>04</span>
-                <span>Projects</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className={styles.menuItem}>
-                <span className={styles.menuNumber}>05</span>
-                <span>Contact</span>
-              </a>
+            {mainMenuItems.map((item) => (
+              <li key={item.href}>
+                <a href={item.href} className={styles.menuItem}>
+                  <span className={styles.menuNumber}>{item.number}</span>
+                  <span>{item.label}</span>
+                </a>
+              </li>
+            ))}
+
+            {/* More Dropdown */}
+            <li className={styles.dropdownContainer}>
+              <button
+                className={`${styles.menuItem} ${styles.dropdownToggle}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setDropdownOpen(!dropdownOpen);
+                }}
+                onBlur={() => setTimeout(() => setDropdownOpen(false), 150)}
+              >
+                <span className={styles.menuNumber}>•••</span>
+                <span>More</span>
+                <svg
+                  className={`${styles.dropdownArrow} ${
+                    dropdownOpen ? styles.dropdownArrowOpen : ""
+                  }`}
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M3 4.5L6 7.5L9 4.5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <ul
+                className={`${styles.dropdownMenu} ${
+                  dropdownOpen ? styles.dropdownMenuOpen : ""
+                }`}
+              >
+                {moreMenuItems.map((item) => (
+                  <li key={item.href}>
+                    <a
+                      href={item.href}
+                      className={styles.dropdownItem}
+                      onClick={() => {
+                        setDropdownOpen(false);
+                        setMenuOpen(false);
+                      }}
+                    >
+                      <span className={styles.dropdownIcon}>{item.icon}</span>
+                      <span>{item.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </li>
           </ul>
         </div>

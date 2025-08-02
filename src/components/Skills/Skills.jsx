@@ -1,19 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./Skills.module.css";
 import { getImageUrl } from "../../utils";
-import skills from "../../data/skills.json";
+import skillsData from "../../data/skills.json";
 
 export const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Frontend");
   const sectionRef = useRef(null);
-
-  const skillCategories = {
-    Frontend: ["HTML", "CSS", "React"],
-    Backend: ["Node", "PHP", "Laravel", "Python", "Flask", "JavaScript"],
-    Database: ["MySQL", "PostgreSQL"],
-    Tools: ["Git", "Figma"],
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,7 +61,7 @@ export const Skills = () => {
       <div
         className={`${styles.categoryTabs} ${isVisible ? styles.fadeInUp : ""}`}
       >
-        {Object.keys(skillCategories).map((category) => (
+        {Object.keys(skillsData.categories).map((category) => (
           <button
             key={category}
             className={`${styles.categoryTab} ${
@@ -85,17 +78,16 @@ export const Skills = () => {
       <div
         className={`${styles.skillsGrid} ${isVisible ? styles.fadeInUp : ""}`}
       >
-        {Object.entries(skillCategories).map(([category, categorySkills]) => (
-          <div
-            key={category}
-            className={`${styles.skillCategory} ${
-              activeCategory === category ? styles.activeCategory : ""
-            }`}
-          >
-            <div className={styles.skillsList}>
-              {categorySkills.map((skillName, index) => {
-                const skill = skills.find((s) => s.title === skillName);
-                return skill ? (
+        {Object.entries(skillsData.categories).map(
+          ([category, categorySkills]) => (
+            <div
+              key={category}
+              className={`${styles.skillCategory} ${
+                activeCategory === category ? styles.activeCategory : ""
+              }`}
+            >
+              <div className={styles.skillsList}>
+                {categorySkills.map((skill, index) => (
                   <div
                     key={skill.title}
                     className={styles.skillCard}
@@ -115,21 +107,21 @@ export const Skills = () => {
                           <div
                             className={styles.skillProgress}
                             style={{
-                              "--progress": `${skill.proficiency || 80}%`,
+                              "--progress": `${skill.proficiency}%`,
                             }}
                           ></div>
                         </div>
                         <span className={styles.skillPercentage}>
-                          {skill.proficiency || 80}%
+                          {skill.proficiency}%
                         </span>
                       </div>
                     </div>
                   </div>
-                ) : null;
-              })}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
 
       {/* Proficiency Overview */}
@@ -140,54 +132,20 @@ export const Skills = () => {
       >
         <h3 className={styles.proficiencyTitle}>Proficiency Overview</h3>
         <div className={styles.proficiencyBars}>
-          <div className={styles.proficiencyItem}>
-            <div className={styles.proficiencyHeader}>
-              <span>Frontend Development</span>
-              <span>75%</span>
+          {skillsData.proficiencyOverview.map((item, index) => (
+            <div key={index} className={styles.proficiencyItem}>
+              <div className={styles.proficiencyHeader}>
+                <span>{item.category}</span>
+                <span>{item.percentage}%</span>
+              </div>
+              <div className={styles.proficiencyBar}>
+                <div
+                  className={styles.proficiencyFill}
+                  style={{ "--width": `${item.percentage}%` }}
+                ></div>
+              </div>
             </div>
-            <div className={styles.proficiencyBar}>
-              <div
-                className={styles.proficiencyFill}
-                style={{ "--width": "90%" }}
-              ></div>
-            </div>
-          </div>
-          <div className={styles.proficiencyItem}>
-            <div className={styles.proficiencyHeader}>
-              <span>UI/UX Design</span>
-              <span>55%</span>
-            </div>
-            <div className={styles.proficiencyBar}>
-              <div
-                className={styles.proficiencyFill}
-                style={{ "--width": "85%" }}
-              ></div>
-            </div>
-          </div>
-          <div className={styles.proficiencyItem}>
-            <div className={styles.proficiencyHeader}>
-              <span>Backend Development</span>
-              <span>75%</span>
-            </div>
-            <div className={styles.proficiencyBar}>
-              <div
-                className={styles.proficiencyFill}
-                style={{ "--width": "75%" }}
-              ></div>
-            </div>
-          </div>
-          <div className={styles.proficiencyItem}>
-            <div className={styles.proficiencyHeader}>
-              <span>Database Management</span>
-              <span>60%</span>
-            </div>
-            <div className={styles.proficiencyBar}>
-              <div
-                className={styles.proficiencyFill}
-                style={{ "--width": "80%" }}
-              ></div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
@@ -199,18 +157,7 @@ export const Skills = () => {
           Technologies I Love Working With
         </div>
         <div className={styles.techItems}>
-          {[
-            "React",
-            "JavaScript",
-            "Node.js",
-            "CSS3",
-            "HTML5",
-            "PHP",
-            "MySQL",
-            "Git",
-            "Figma",
-            "Laravel",
-          ].map((tech, index) => (
+          {skillsData.techCloud.map((tech, index) => (
             <div
               key={tech}
               className={styles.techBubble}

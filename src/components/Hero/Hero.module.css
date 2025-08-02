@@ -119,7 +119,7 @@
 }
 
 .titleName {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+  background: linear-gradient(135deg, #22c55e, #3b82f6, #16a34a);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -174,7 +174,7 @@
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #22c55e, #3b82f6);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -200,7 +200,7 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #22c55e, #3b82f6);
   color: #ffffff;
   border: none;
   border-radius: 12px;
@@ -253,6 +253,71 @@
   border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-3px);
 }
+
+/* CV Download Button */
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cvButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.cvButton:hover::before {
+  left: 100%;
+}
+
+.cvButton:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(34, 197, 94, 0.4),
+    0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.cvButton:hover .downloadIcon {
+  transform: translateY(2px);
+  animation: downloadBounce 0.6s ease infinite alternate;
+}
+
+.cvButton:active {
+  transform: translateY(0px);
+  box-shadow: 
+    0 4px 15px rgba(34, 197, 94, 0.3),
+    0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.downloadIcon {
+  transition: transform 0.3s ease;
+}
+
+@keyframes downloadBounce {
+  from { transform: translateY(2px); }
+  to { transform: translateY(4px); }
+}
+
+
 
 /* Social Group */
 .socialGroup {
@@ -326,7 +391,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(1.0) contrast(1.0);
 }
 
 .imageOverlay {
@@ -522,7 +587,8 @@
   }
 
   .primaryCta,
-  .secondaryCta {
+  .secondaryCta,
+  .cvButton {
     width: 100%;
     max-width: 280px;
     justify-content: center;

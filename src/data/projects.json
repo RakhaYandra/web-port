@@ -1,42 +1,91 @@
-[
-  {
-    "title": "AI & ML based Health Diagnosis",
-    "imageSrc": "projects/project.png",
-    "description": "AI & ML based Health Diagnosis to predict alzheimers, pneumonia, and fetal health using machine learning and consulting healthcare with AI. Built with React, Express, Node, and MongoDB.",
-    "skills": ["React", "Express", "Node", "MongoDB", "AI", "ML"],
-    "demo": "https://www.example.com",
-    "source": "https://github.com/Owen-Caudinata/RPL-AI-ML-Health-Diagnosis.git"
+{
+  "categories": {
+    "Solo": [
+      {
+        "title": "To Do List",
+        "imageSrc": "projects/project.png",
+        "description": "A simple To Do List app made using Python.",
+        "skills": ["Python"],
+        "demo": "https://www.example.com",
+        "source": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git",
+        "workType": "Solo",
+        "duration": "1 Week"
+      },
+      {
+        "title": "Photobooth",
+        "imageSrc": "projects/project.png",
+        "description": "A web application that allows users to take photos and apply filters. Built with Next.js and React.",
+        "skills": ["Next.js", "React", "Tailwind CSS"],
+        "demo": "https://github.com/RakhaYandra/photobooth.git",
+        "source": "https://github.com/RakhaYandra/photobooth.git",
+        "workType": "Solo",
+        "duration": "1 Week"
+      },
+      {
+        "title": "Campkit",
+        "imageSrc": "projects/project.png",
+        "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",
+        "skills": ["React", "Express", "PostgreSQL", "JavaScript", "CSS"],
+        "demo": "https://www.example.com",
+        "source": "https://github.com/RakhaYandra/campkit.git",
+        "workType": "Solo",
+        "duration": "2 Days"
+      }
+    ],
+    "Group": [
+      {
+        "title": "AI & ML based Health Diagnosis",
+        "imageSrc": "projects/project.png",
+        "description": "AI & ML based Health Diagnosis to predict alzheimers, pneumonia, and fetal health using machine learning and consulting healthcare with AI. Built with React, Express, Node, and MongoDB.",
+        "skills": ["React", "Express", "Node", "MongoDB", "AI", "ML"],
+        "demo": "https://www.example.com",
+        "source": "https://github.com/Owen-Caudinata/RPL-AI-ML-Health-Diagnosis.git",
+        "workType": "Group",
+        "teamSize": "6 members",
+        "duration": "4 months"
+      },
+      {
+        "title": "Horticultural Production Forecasting Dashboard",
+        "imageSrc": "projects/project.png",
+        "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",
+        "skills": ["React", "Express", "ML", "MongoDB", "AI"],
+        "demo": "https://www.example.com",
+        "source": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git",
+        "workType": "Group",
+        "teamSize": "3 members",
+        "duration": "4 months"
+      }
+    ],
+    "Final Project": [
+      {
+        "title": "Air Quality Monitoring System based on Internet of Things (IoT) and Machine Learning",
+        "imageSrc": "projects/project.png",
+        "description": "Air Quality Monitoring System to monitor air quality using IoT devices and machine learning. Built with Laravel, Flask, and PostgreSQL.",
+        "skills": ["Laravel", "Flask", "ML", "PostgreSQL", "IoT"],
+        "demo": "https://www.example.com",
+        "source": "https://github.com/RakhaYandra/air-quality-monitoring-system.git",
+        "workType": "Final Project",
+        "teamSize": "4 members",
+        "duration": "4 months",
+        "advisor": ["Dr. Hanif Fakhrurroja, S.Si, M. T.", "Dita Pramesti, S.Si, M. Si."]
+      }
+    ]
   },
-  {
-    "title": "Campkit",
-    "imageSrc": "projects/project.png",
-    "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",
-    "skills": ["React", "Express", "PostgreSQL", "JavaScript", "CSS"],
-    "demo": "https://www.example.com",
-    "source": "https://github.com/RakhaYandra/campkit.git"
-  },
-  {
-    "title": "Horticultural Production Forecasting Dashboard",
-    "imageSrc": "projects/project.png",
-    "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",
-    "skills": ["React", "Express", "ML", "MongoDB", "AI"],
-    "demo": "https://www.example.com",
-    "source": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git"
-  },
-  {
-    "title": "To Do List",
-    "imageSrc": "projects/project.png",
-    "description": "A simple To Do List app made using Python.",
-    "skills": ["Python"],
-    "demo": "https://www.example.com",
-    "source": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git"
-  },
-  {
-    "title": "Photobooth",
-    "imageSrc": "projects/project.png",
-    "description": "A web application that allows users to take photos and apply filters. Built with Next.js and React.",
-    "skills": ["Next.js", "React", "Tailwind CSS"],
-    "demo": "https://github.com/RakhaYandra/photobooth.git",
-    "source": "https://github.com/RakhaYandra/photobooth.git"
-  }
-]
+  "projectTypes": [
+    {
+      "name": "Solo",
+      "description": "Individual projects showcasing personal skills",
+      "icon": "👤"
+    },
+    {
+      "name": "Group",
+      "description": "Collaborative team projects",
+      "icon": "👥"
+    },
+    {
+      "name": "Final Project",
+      "description": "Academic final projects",
+      "icon": "🎓"
+    }
+  ]
+}

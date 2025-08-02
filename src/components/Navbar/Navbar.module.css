@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
 }
 
 .logo {
@@ -103,7 +103,7 @@
 .menuItems {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -115,9 +115,9 @@
   gap: var(--spacing-xs);
   color: var(--color-text-secondary);
   text-decoration: none;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-md);
   transition: all var(--transition-base);
   position: relative;
@@ -152,6 +152,80 @@
   font-family: var(--font-family-secondary);
 }
 
+/* Dropdown Styles */
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownToggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdownArrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdownArrowOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-lg);
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.dropdownMenuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.dropdownItem:hover {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--color-text-primary);
+  transform: translateX(4px);
+}
+
+.dropdownIcon {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
 .ctaButton {
   padding: var(--spacing-sm) var(--spacing-lg);
   background: var(--gradient-primary);
@@ -173,7 +247,7 @@
 @media screen and (max-width: 768px) {
   .navContainer {
     padding: 0 var(--spacing-md);
-    height: 70px;
+    height: 60px;
   }
   
   .logoText {
@@ -190,7 +264,7 @@
   
   .menuItems {
     position: fixed;
-    top: 70px;
+    top: 60px;
     right: 0;
     bottom: 0;
     width: 300px;
@@ -227,6 +301,29 @@
     background: var(--color-bg-card);
     transform: translateX(8px);
   }
+  
+  /* Mobile Dropdown Styles */
+  .dropdownMenu {
+    position: static;
+    width: 100%;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: var(--border-radius-md);
+    margin-top: 0.5rem;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  
+  .dropdownItem {
+    padding: 0.875rem 1.25rem;
+    margin-left: 1rem;
+    border-radius: var(--border-radius-md);
+  }
+  
+  .dropdownItem:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: translateX(4px);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -240,11 +337,11 @@
 
 /* Add padding to body to account for fixed navbar */
 :global(body) {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 @media screen and (max-width: 768px) {
   :global(body) {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }

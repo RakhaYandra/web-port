@@ -2,13 +2,16 @@ import { useState, useEffect, useRef } from "react";
 
 import styles from "./Projects.module.css";
 
-import projects from "../../data/projects.json";
+import projectsData from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const [filter, setFilter] = useState("all");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  // Get all projects from all categories
+  const allProjects = Object.values(projectsData.categories).flat();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,22 +30,18 @@ export const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Extract unique categories from projects (commented out as not used)
-  // const categories = [
-  //   "all",
-  //   ...new Set(
-  //     projects.flatMap((project) =>
-  //       project.skills.map((skill) => skill.toLowerCase())
-  //     )
-  //   ),
-  // ];
-
-  const filteredProjects =
-    filter === "all"
-      ? projects
-      : projects.filter((project) =>
-          project.skills.some((skill) => skill.toLowerCase() === filter)
-        );
+  const filteredProjects = () => {
+    if (filter === "all") {
+      return allProjects;
+    } else if (["Solo", "Group", "Final Project"].includes(filter)) {
+      return projectsData.categories[filter] || [];
+    } else {
+      // Filter by technology/skill
+      return allProjects.filter((project) =>
+        project.skills.some((skill) => skill.toLowerCase() === filter)
+      );
+    }
+  };
 
   return (
     <section className={styles.container} id="projects" ref={sectionRef}>
@@ -57,28 +56,51 @@ export const Projects = () => {
 
       <div className={styles.filterContainer}>
         <div className={styles.filters}>
-          {["all", "react", "javascript", "python", "ai", "ml"].map(
-            (category) => (
-              <button
-                key={category}
-                className={`${styles.filterBtn} ${
-                  filter === category ? styles.active : ""
-                }`}
-                onClick={() => setFilter(category)}
-              >
-                {category === "all"
-                  ? "All Projects"
-                  : category === "ai"
-                  ? "AI & ML"
-                  : category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            )
-          )}
+          {/* Project Type Categories */}
+          <button
+            className={`${styles.filterBtn} ${
+              filter === "all" ? styles.active : ""
+            }`}
+            onClick={() => setFilter("all")}
+          >
+            All Projects
+          </button>
+          {projectsData.projectTypes.map((type) => (
+            <button
+              key={type.name}
+              className={`${styles.filterBtn} ${
+                filter === type.name ? styles.active : ""
+              }`}
+              onClick={() => setFilter(type.name)}
+              title={type.description}
+            >
+              <span className={styles.filterIcon}>{type.icon}</span>
+              {type.name}
+            </button>
+          ))}
+
+          {/* Technology Filters */}
+          <div className={styles.filterDivider}></div>
+          {["react", "javascript", "python", "ai", "ml"].map((tech) => (
+            <button
+              key={tech}
+              className={`${styles.filterBtn} ${styles.techFilter} ${
+                filter === tech ? styles.active : ""
+              }`}
+              onClick={() => setFilter(tech)}
+            >
+              {tech === "ai"
+                ? "AI"
+                : tech === "ml"
+                ? "ML"
+                : tech.charAt(0).toUpperCase() + tech.slice(1)}
+            </button>
+          ))}
         </div>
       </div>
 
       <div className={styles.projects}>
-        {filteredProjects.map((project, id) => (
+        {filteredProjects().map((project, id) => (
           <div
             key={`${project.title}-${id}`}
             style={{ "--delay": `${id * 0.1}s` }}
@@ -88,7 +110,7 @@ export const Projects = () => {
         ))}
       </div>
 
-      {filteredProjects.length === 0 && (
+      {filteredProjects().length === 0 && (
         <div className={styles.noProjects}>
           <p>No projects found for this category.</p>
         </div>

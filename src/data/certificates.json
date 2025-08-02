@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Belajar Back-End Pemula dengan JavaScript",
+    "issuingOrganization": "Dicoding Indonesia",
+    "date": "January 2025",
+    "credentialId": "EYX4G9OKOZDL",
+    "verificationUrl": "https://www.dicoding.com/certificates/EYX4G9OKOZDL",
+    "skills": ["JavaScript", "Node.js", "Backend Development"],
+    "description": "Fundamental concepts of backend development using JavaScript, including Node.js and Express.",
+    "imageSrc": "certificates/dicoding.png"
+  },
+  {
+    "title": "Belajar Dasar AI",
+    "issuingOrganization": "Dicoding Indonesia",
+    "date": "January 2025",
+    "credentialId": "1RXYEO9Q9ZVM",
+    "verificationUrl": "https://www.dicoding.com/certificates/1RXYEO9Q9ZVM",
+    "skills": ["Artificial Intelligence", "Machine Learning", "Python", "Deep Learning"],
+    "description": "Fundamental concepts of AI and machine learning using Python.",
+    "imageSrc": "certificates/dicoding.png"
+  },
+  {
+    "title": "Belajar Dasar Pemrograman JavaScript",
+    "issuingOrganization": "Dicoding Indonesia",
+    "date": "January 2025",
+    "credentialId": "QLZ93KQQDZ5D",
+    "verificationUrl": "https://www.dicoding.com/certificates/QLZ93KQQDZ5D",
+    "skills": ["JavaScript", "Node.js", "Object-Oriented Programming"],
+    "description": "Fundamental concepts of JavaScript programming, including object-oriented programming principles.",
+    "imageSrc": "certificates/dicoding.png"
+  },
+  {
+    "title": "Belajar Dasar Cloud dan Gen AI di AWS",
+    "issuingOrganization": "Dicoding Indonesia",
+    "date": "January 2025",
+    "credentialId": "53XEDJGR9PRN",
+    "verificationUrl": "https://www.dicoding.com/certificates/53XEDJGR9PRN",
+    "skills": ["Cloud Computing", "Artificial Intelligence", "AWS"],
+    "description": "Fundamental concepts of cloud computing and generative AI using AWS.",
+    "imageSrc": "certificates/dicoding.png"
+  },
+  {
+    "title": "Web Developer",
+    "issuingOrganization": "Badan Nasional Sertifikasi Profesi (BNSP)",
+    "date": "October 2024",
+    "credentialId": "-",
+    "verificationUrl": "https://www.linkedin.com/in/rakhaputrapebriyandra/details/certifications/",
+    "skills": ["Web Development", "HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js"],
+    "description": "Certification in web development, covering fundamental concepts of web development, including front-end and back-end technologies.",
+    "imageSrc": "certificates/bnsp.png"
+  },
+  {
+    "title": "JavaScript Essentials 1",
+    "issuingOrganization": "Cisco",
+    "date": "July 2024",
+    "credentialId": "5802edfb-ea5b-42be-babb-d82e113a3c21",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/5802edfb-ea5b-42be-babb-d82e113a3c21",
+    "skills": ["JavaScript", "Programming", "Web Development", "Data Types", "Algorithm Thinking", "Debugging"],
+    "description": "Cisco, in collaboration with OpenEDG JS Institute, verifies the earner of this badge successfully completed the JavaScript Essentials 1 course and achieved the student level credentials. Earners know the syntax of the core JavaScript; can work with variables, operators, flow control, and functions; know the basics of data types system; think algorithmically and can analyze problems using a programmatic conceptual apparatus; and can design, develop, and improve simple JavaScript programs.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "Python Essentials 1",
+    "issuingOrganization": "Cisco",
+    "date": "July 2024",
+    "credentialId": "3f37d4d4-b448-4ccf-b1aa-39f1494bc8aa",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/3f37d4d4-b448-4ccf-b1aa-39f1494bc8aa",
+    "skills": ["Computer Programming", "Python", "Software Development", "Algorithm Thinking", "Analytical Thinking"],
+    "description": "Cisco, in collaboration with OpenEDG Python Institute, verifies the earner of this badge successfully completed the Python Essentials 1 course and achieved the student level credentials. Earners have knowledge of the concepts of computer programming, the syntax and semantics of the Python language as well as demonstrate the ability to accomplish coding tasks related to the essentials of programming in the Python language and resolve implementation challenges using the Python Standard Library.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "Fortinet Certified Fundamentals Cybersecurity",
+    "issuingOrganization": "Fortinet",
+    "date": "June 2024",
+    "credentialId": "086fd440-f439-4fc8-ad6b-1a6e5a5598d9",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/086fd440-f439-4fc8-ad6b-1a6e5a5598d9",
+    "skills": ["Cybersecurity", "Network Security", "Threat Landscape", "Security Fundamentals", "Application Security"],
+    "description": "The Fortinet Certified Fundamentals in Cybersecurity certification validates that the earner has mastered the technical skills and knowledge that are required for any entry-level job role in cybersecurity. The curriculum covers today’s threat landscape and the fundamentals of cybersecurity.",
+    "imageSrc": "certificates/fortinet.png"
+  },
+  {
+    "title": "Getting Started in Cybersecurity 2.0",
+    "issuingOrganization": "Fortinet",
+    "date": "June 2024",
+    "credentialId": "457ad325-b52c-4c87-bc78-dce857163c3b",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/457ad325-b52c-4c87-bc78-dce857163c3b",
+    "skills": ["Cybersecurity", "Network Security", "Threat Landscape", "Security Fundamentals", "Application Security"],
+    "description": "The Getting Started in Cybersecurity 2.0 badge recognizes a basic understanding of cybersecurity. The badge earner has demonstrated knowledge of cybersecurity terminology and concepts, and has a fundamental understanding of key cybersecurity topics, technologies, and products.",
+    "imageSrc": "certificates/fortinet.png"
+  },
+  {
+    "title": "Introduction to the Threat Landscape 2.0",
+    "issuingOrganization": "Fortinet",
+    "date": "June 2024",
+    "credentialId": "888faf62-ed7b-4408-9f06-8eff6a1e60e4",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/888faf62-ed7b-4408-9f06-8eff6a1e60e4",
+    "skills": ["Cybersecurity", "Network Security", "Threat Landscape", "Security Fundamentals", "Application Security"],
+    "description": "The Introduction to the Threat Landscape 2.0 badge recognizes a fundamental understanding of the cyber threat landscape. The badge earner has demonstrated essential knowledge of the threats that endanger computer networks, the cast of bad actors who are behind cyber threats, and the cyber security principles that can keep users and computer networks safe.",
+    "imageSrc": "certificates/fortinet.png"
+  },
+  {
+    "title": "Technical Introduction to Cybersecurity 1.0",
+    "issuingOrganization": "Fortinet",
+    "date": "June 2024",
+    "credentialId": "3a233a86-7410-482a-ae81-d61d92f4f550",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/3a233a86-7410-482a-ae81-d61d92f4f550",
+    "skills": ["Application Security", "Cloud Security", "Cryptography", "Data Security", "Data Privacy", "Network Security"],
+    "description": "The Technical Introduction to Cybersecurity 1.0 badge recognizes expertise in the technical basics of cybersecurity. The badge earner has demonstrated knowledge of essential cybersecurity terminology and concepts, and of the technical foundations for network and endpoint security.",
+    "imageSrc": "certificates/fortinet.png"
+  },
+  {
+    "title": "Cyber Threat Management",
+    "issuingOrganization": "Cisco",
+    "date": "May 2024",
+    "credentialId": "e4c683b6-03c6-492c-8c9a-acbe7c22a535",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/e4c683b6-03c6-492c-8c9a-acbe7c22a535",
+    "skills": ["Disaster Recovery", "Governance", "Incident Response", "Penetration Testing", "Risk Assessment", "Risk Management", "Security Controls"],
+    "description": "Cisco verifies the earner of this badge successfully completed the Cyber Threat Management course. The holder of this student-level credential is familiar with cybersecurity policies and governance to ensure an organization complies with ethics standards and legal and regulatory frameworks. They understand how to do a network vulnerability assessment and create a risk management plan, as well as post-incident response.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "CyberOps Associate",
+    "issuingOrganization": "Cisco",
+    "date": "June 2024",
+    "credentialId": "85f9ecc2-3856-492b-9a80-6e70f093edd5",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/85f9ecc2-3856-492b-9a80-6e70f093edd5",
+    "skills": ["Computer Forensics", "Incident Response", "Cryptography", "Cybersecurity", "Malware Analysis", "Threat Detection"],
+    "description": "Cisco verifies the earner of this badge successfully completed the CyberOps Associate course. The holder of this student-level credential has a broad understanding of Security Operations. They developed problem-solving skills to detect and analyze intrusions and monitor the network by completing up to 30 hours of 52 hands-on labs using virtual machines (Security Onion - ELK) and/or Cisco Packet Tracer.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "Junior Security Operations Analyst (SOC) Talent Scouting Academy",
+    "issuingOrganization": "Digital Talent Scholarship (DTS)",
+    "date": "May 2024",
+    "credentialId": "-",
+    "verificationUrl": "https://www.linkedin.com/in/rakhaputrapebriyandra/details/certifications/",
+    "skills": ["Cybersecurity", "Network Security", "Threat Landscape", "Security Fundamentals", "Application Security", "System and Network Defense"],
+    "description": "Cybersecurity training provided by the Ministry of Communication and Information Technology (Kemenkominfo), with a focus on the responsibilities of a Security Operations Center (SOC) analyst, particularly in threat detection and incident response.",
+    "imageSrc": "certificates/dts.png"
+  },
+  {
+    "title": "Endpoint Security",
+    "issuingOrganization": "Cisco",
+    "date": "May 2024",
+    "credentialId": "f801ea82-89b1-4b9c-9a94-c8953755e4f3",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/f801ea82-89b1-4b9c-9a94-c8953755e4f3",
+    "skills": ["Cybersecurity", "Network Security", "Threat Landscape", "Security Fundamentals", "Application Security", "System and Network Defense"],
+    "description": "Cisco verifies the earner of this badge successfully completed the Endpoint Security course. The holder of this student-level credential has a broad understanding of basic concepts of network security, as well as operating systems and endpoint security.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "Network Defense",
+    "issuingOrganization": "Cisco",
+    "date": "May 2024",
+    "credentialId": "26b38d8e-bbef-4231-a40d-0cb3ca93a700",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/26b38d8e-bbef-4231-a40d-0cb3ca93a700",
+    "skills": ["Application Security", "Cloud Security", "Firewalls", "Cybersecurity", "Public Key Infrastructure", "Access Control"],
+    "description": "Cisco verifies the earner of this badge successfully completed the Network Defense course. The holder of this student-level credential has a broad understanding of techniques to monitor and protect the network, including access control, firewalls, cloud security, and cryptography. They are also familiar with how to evaluate and respond to security alerts.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
+    "title": "Certificate of Completion - Soft Skill Career Class (Star)",
+    "issuingOrganization": "Direktorat Kemahasiswaan Telkom University",
+    "date": "March 2024",
+    "credentialId": "-",
+    "verificationUrl": "https://www.linkedin.com/in/rakhaputrapebriyandra/details/certifications/",
+    "skills": ["Communication", "Teamwork", "Problem Solving", "Time Management", "Adaptability"],
+    "description": "Direktorat Kemahasiswaan Telkom University verifies the earner of this badge successfully completed the Soft Skill Career Class (Star). The holder of this student-level credential has a broad understanding of essential soft skills needed in the workplace.",
+    "imageSrc": "certificates/ditmawa.png"
+  }
+]

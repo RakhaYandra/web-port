@@ -1,50 +1,108 @@
-[
-  {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+{
+  "categories": {
+    "Frontend": [
+      {
+        "title": "HTML",
+        "imageSrc": "skills/html.png",
+        "proficiency": 75
+      },
+      {
+        "title": "CSS",
+        "imageSrc": "skills/css.png",
+        "proficiency": 70
+      },
+      {
+        "title": "React",
+        "imageSrc": "skills/react.png",
+        "proficiency": 65
+      }
+    ],
+    "Backend": [
+      {
+        "title": "Node",
+        "imageSrc": "skills/node.png",
+        "proficiency": 75
+      },
+      {
+        "title": "PHP",
+        "imageSrc": "skills/php.png",
+        "proficiency": 85
+      },
+      {
+        "title": "Laravel",
+        "imageSrc": "skills/laravel.png",
+        "proficiency": 80
+      },
+      {
+        "title": "Python",
+        "imageSrc": "skills/python.png",
+        "proficiency": 70
+      },
+      {
+        "title": "JavaScript",
+        "imageSrc": "skills/javascript.png",
+        "proficiency": 70
+      }
+    ],
+    "Database": [
+      {
+        "title": "MySQL",
+        "imageSrc": "skills/mysql.png",
+        "proficiency": 70
+      },
+      {
+        "title": "PostgreSQL",
+        "imageSrc": "skills/postgressql.png",
+        "proficiency": 70
+      }
+    ],
+    "Tools": [
+      {
+        "title": "Git",
+        "imageSrc": "skills/git.png",
+        "proficiency": 75
+      },
+      {
+        "title": "Figma",
+        "imageSrc": "skills/figma.png",
+        "proficiency": 60
+      }
+    ]
   },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
-    "title": "React",
-    "imageSrc": "skills/react.png"
-  },
-  {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
-  },
-  {
-    "title": "MySQL",
-    "imageSrc": "skills/mysql.png"
-  },
-  {
-    "title": "PostgreSQL",
-    "imageSrc": "skills/postgressql.png"
-  },
-  {
-    "title": "Python",
-    "imageSrc": "skills/python.png"
-  },
-  {
-    "title": "JavaScript",
-    "imageSrc": "skills/javascript.png"
-  },
-  {
-    "title": "PHP",
-    "imageSrc": "skills/php.png"
-  },
-  {
-    "title": "Laravel",
-    "imageSrc": "skills/laravel.png"
-  },
-  {
-    "title": "Git",
-    "imageSrc": "skills/git.png"
-  }
-]
+  "proficiencyOverview": [
+    {
+      "category": "Frontend Development",
+      "percentage": 70,
+      "description": "Developing modern, responsive user interfaces"
+    },
+    {
+      "category": "UI/UX Design",
+      "percentage": 60,
+      "description": "Creating intuitive and beautiful user experiences"
+    },
+    {
+      "category": "Backend Development",
+      "percentage": 76,
+      "description": "Building robust server-side applications"
+    },
+    {
+      "category": "Database Management",
+      "percentage": 70,
+      "description": "Designing and optimizing database structures"
+    }
+  ],
+  "techCloud": [
+    "React",
+    "JavaScript",
+    "Node.js",
+    "CSS3",
+    "HTML5",
+    "PHP",
+    "MySQL",
+    "Git",
+    "Figma",
+    "Laravel",
+    "Python",
+    "PostgreSQL"
+  ]
+}
