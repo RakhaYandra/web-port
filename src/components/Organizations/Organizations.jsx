@@ -8,9 +8,6 @@ export const Organizations = () => {
   const [selectedOrg, setSelectedOrg] = useState(null);
   const sectionRef = useRef(null);
 
-  // Debug: Check if organizations data loaded
-  console.log('Organizations loaded:', organizations.length, 'items');
-
   // Sort organizations by date (newest first)
   const sortedOrganizations = [...organizations].sort((a, b) => {
     const getDateValue = (dateStr) => {
@@ -41,7 +38,7 @@ export const Organizations = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1, rootMargin: '50px' }
+      { threshold: 0.1, rootMargin: "50px" }
     );
 
     if (sectionRef.current) {
@@ -72,15 +69,10 @@ export const Organizations = () => {
   };
 
   return (
-    <section 
-      className={styles.container} 
-      id="organizations" 
+    <section
+      className={styles.container}
+      id="organizations"
       ref={sectionRef}
-      style={{ 
-        minHeight: '100vh', 
-        border: '5px solid lime',
-        backgroundColor: 'rgba(255, 0, 0, 0.1)'
-      }}
     >
       {/* Background Elements */}
       <div className={styles.backgroundElements}>
@@ -100,10 +92,14 @@ export const Organizations = () => {
       </div>
 
       <div className={styles.sectionHeader}>
-        <h2 className={`${styles.title} ${styles.slideUp} ${styles.forceVisible}`}>
+        <h2
+          className={`${styles.title} ${styles.slideUp} ${styles.forceVisible}`}
+        >
           Professional Organizations
         </h2>
-        <p className={`${styles.subtitle} ${styles.slideUp} ${styles.forceVisible}`}>
+        <p
+          className={`${styles.subtitle} ${styles.slideUp} ${styles.forceVisible}`}
+        >
           Building communities and driving innovation through collaboration
         </p>
       </div>
@@ -132,8 +128,9 @@ export const Organizations = () => {
                       alt={`${org.name} logo`}
                       className={styles.orgLogo}
                       onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.parentElement.style.background = 'linear-gradient(135deg, #22c55e, #3b82f6)';
+                        e.target.style.display = "none";
+                        e.target.parentElement.style.background =
+                          "linear-gradient(135deg, #22c55e, #3b82f6)";
                         e.target.parentElement.innerHTML = org.name.charAt(0);
                       }}
                     />
