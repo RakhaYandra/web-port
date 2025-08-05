@@ -216,7 +216,7 @@ export const Hero = () => {
         <div className={styles.imageContainer}>
           <div className={styles.imageFrame}>
             <img
-              src={getImageUrl("hero/heroImage.jpg")}
+              src={getImageUrl("hero/heroImage1.jpg")}
               alt="Rakha Putra Pebri Yandra - Frontend Developer"
               className={styles.heroImage}
             />

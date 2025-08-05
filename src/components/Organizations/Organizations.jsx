@@ -69,11 +69,7 @@ export const Organizations = () => {
   };
 
   return (
-    <section
-      className={styles.container}
-      id="organizations"
-      ref={sectionRef}
-    >
+    <section className={styles.container} id="organizations" ref={sectionRef}>
       {/* Background Elements */}
       <div className={styles.backgroundElements}>
         <div className={styles.networkPattern}></div>

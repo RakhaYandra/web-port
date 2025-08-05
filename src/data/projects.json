@@ -6,7 +6,7 @@
         "imageSrc": "projects/project.png",
         "description": "A simple To Do List app made using Python.",
         "skills": ["Python"],
-        "demo": "https://www.example.com",
+        "demo": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git",
         "source": "https://github.com/RakhaYandra/-Individual-Project-To-Do-List-Python.git",
         "workType": "Solo",
         "duration": "1 Week"
@@ -26,10 +26,20 @@
         "imageSrc": "projects/project.png",
         "description": "Campkit is a platform for campers to find and book camping equipment. Built with React, Express, and PostgreSQL.",
         "skills": ["React", "Express", "PostgreSQL", "JavaScript", "CSS"],
-        "demo": "https://www.example.com",
+        "demo": "https://github.com/RakhaYandra/campkit.git",
         "source": "https://github.com/RakhaYandra/campkit.git",
         "workType": "Solo",
         "duration": "2 Days"
+      },
+      {
+        "title": "Gamepad Dashboard",
+        "imageSrc": "projects/project.png",
+        "description": "A dashboard for gamepad settings and configurations. Built with React, Vite, and Tailwind CSS.",
+        "skills": ["React", "Vite", "Tailwind CSS"],
+        "demo": "https://github.com/RakhaYandra/gamepad-dashboard.git",
+        "source": "https://github.com/RakhaYandra/gamepad-dashboard.git",
+        "workType": "Solo",
+        "duration": "5 Days"
       }
     ],
     "Group": [
@@ -38,7 +48,7 @@
         "imageSrc": "projects/project.png",
         "description": "AI & ML based Health Diagnosis to predict alzheimers, pneumonia, and fetal health using machine learning and consulting healthcare with AI. Built with React, Express, Node, and MongoDB.",
         "skills": ["React", "Express", "Node", "MongoDB", "AI", "ML"],
-        "demo": "https://www.example.com",
+        "demo": "https://github.com/Owen-Caudinata/RPL-AI-ML-Health-Diagnosis.git",
         "source": "https://github.com/Owen-Caudinata/RPL-AI-ML-Health-Diagnosis.git",
         "workType": "Group",
         "teamSize": "6 members",
@@ -49,7 +59,7 @@
         "imageSrc": "projects/project.png",
         "description": "Horticultural Production Forecasting Dashboard to predict the production of horticultural products. Built with React, Node, and MongoDB.",
         "skills": ["React", "Express", "ML", "MongoDB", "AI"],
-        "demo": "https://www.example.com",
+        "demo": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git",
         "source": "https://github.com/RakhaYandra/horticulture-dashboard-noted.git",
         "workType": "Group",
         "teamSize": "3 members",
@@ -62,7 +72,7 @@
         "imageSrc": "projects/project.png",
         "description": "Air Quality Monitoring System to monitor air quality using IoT devices and machine learning. Built with Laravel, Flask, and PostgreSQL.",
         "skills": ["Laravel", "Flask", "ML", "PostgreSQL", "IoT"],
-        "demo": "https://www.example.com",
+        "demo": "https://github.com/RakhaYandra/air-quality-monitoring-system.git",
         "source": "https://github.com/RakhaYandra/air-quality-monitoring-system.git",
         "workType": "Final Project",
         "teamSize": "4 members",
