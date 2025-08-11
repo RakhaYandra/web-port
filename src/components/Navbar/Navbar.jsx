@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { getImageUrl } from "../../utils";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -37,9 +37,13 @@ export const Navbar = () => {
       <div className={styles.navContainer}>
         <a className={styles.logo} href="/">
           <div className={styles.logoIcon}>
-            <span>R</span>
+            <img
+              src={getImageUrl("hero/heroImage.jpg")}
+              alt="Rakha Yandra"
+              className={styles.logoImage}
+            />
           </div>
-          <span className={styles.logoText}>Rakha Yandra</span>
+          <span className={styles.logoText}>Rakha Putra Pebri Yandra</span>
         </a>
 
         <div className={styles.menu}>

@@ -340,6 +340,63 @@
   margin-bottom: 0.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  position: relative;
+  max-width: 100%;
+  display: block;
+  line-height: 1.4;
+}
+
+.handleText.scrolling {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.2) 70%,
+    rgba(0, 0, 0, 0.1) 80%,
+    transparent 85%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.2) 70%,
+    rgba(0, 0, 0, 0.1) 80%,
+    transparent 85%
+  );
+}
+
+.scrolling-text,
+.scrollingText {
+  display: inline-block;
+  animation: smoothMarquee 12s ease-in-out infinite;
+  animation-delay: 1s;
+  padding-right: 50px;
+}
+
+.contactCard:hover .scrolling-text,
+.contactCard:hover .scrollingText {
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes smoothMarquee {
+  0%, 15% {
+    transform: translateX(0);
+  }
+  40%, 60% {
+    transform: translateX(calc(-100% + 150px));
+  }
+  85%, 100% {
+    transform: translateX(0);
+  }
 }
 
 .contactCard:hover .handleText {

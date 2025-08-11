@@ -156,13 +156,16 @@
   background: rgba(15, 23, 42, 0.8);
   border-radius: 20px;
   border: 1px solid rgba(34, 197, 94, 0.2);
-  padding: 2rem;
+  padding: 1.75rem;
   cursor: pointer;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
   overflow: hidden;
+  height: 400px; /* Optimized height for better proportions */
+  display: flex;
+  flex-direction: column;
 }
 
 .certificateCard.slideUp {
@@ -199,9 +202,9 @@
 /* Card Header */
 .cardHeader {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 .certificateIcon {
@@ -222,54 +225,53 @@
   border-radius: 8px;
 }
 
-.badgeContainer {
-  display: flex;
-  align-items: center;
-}
-
-.verifiedBadge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(34, 197, 94, 0.2);
-  color: #22c55e;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: 1px solid rgba(34, 197, 94, 0.3);
-}
-
-.badgeIcon {
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
 /* Card Content */
 .cardContent {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take remaining space */
 }
 
 .certificateTitle {
   font-size: 1.25rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  margin-bottom: 0.875rem;
+  line-height: 1.3;
+  min-height: 3.25rem; /* Minimum height for consistency */
+  max-height: 3.25rem; /* Maximum height for 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
 }
 
 .issuingOrg {
   font-size: 1rem;
   color: #22c55e;
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.3;
+  min-height: 2.6rem; /* Minimum height for consistency */
+  max-height: 2.6rem; /* Maximum height for 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
 }
 
 .issueDate {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  height: 1.1rem; /* Fixed height for 1 line */
+  line-height: 1.1rem;
 }
 
 /* Skills */
@@ -277,7 +279,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  min-height: 3.2rem; /* Minimum height for consistency */
+  max-height: 3.2rem; /* Maximum height for 2 rows */
+  overflow: hidden;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .skillTag {
@@ -288,12 +295,18 @@
   font-size: 0.75rem;
   font-weight: 500;
   border: 1px solid rgba(59, 130, 246, 0.3);
+  height: 1.4rem; /* Fixed height for tags */
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 /* Card Actions */
 .cardActions {
   display: flex;
   gap: 0.75rem;
+  margin-top: auto; /* Push to bottom */
+  padding-top: 0.5rem; /* Add some spacing from content above */
 }
 
 .viewButton {
@@ -301,11 +314,16 @@
   background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 12px;
   font-weight: 500;
+  font-size: 0.875rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  height: 2.5rem; /* Fixed height for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .viewButton:hover {
@@ -317,13 +335,19 @@
   background: rgba(59, 130, 246, 0.2);
   color: #3b82f6;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 12px;
   font-weight: 500;
+  font-size: 0.875rem;
   border: 1px solid rgba(59, 130, 246, 0.3);
   transition: all 0.3s ease;
   text-align: center;
   min-width: 80px;
+  height: 2.5rem; /* Fixed height for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .verifyButton:hover {
@@ -508,10 +532,35 @@
 
   .certificateCard {
     padding: 1.5rem;
+    height: 380px; /* Slightly smaller height for mobile */
+  }
+
+  .certificateTitle {
+    font-size: 1.125rem;
+    min-height: 2.8rem;
+    max-height: 2.8rem;
+  }
+
+  .issuingOrg {
+    font-size: 0.9rem;
+    min-height: 2.2rem;
+    max-height: 2.2rem;
+  }
+
+  .skillsContainer {
+    min-height: 2.8rem;
+    max-height: 2.8rem;
   }
 
   .cardActions {
-    flex-direction: column;
+    flex-direction: row; /* Keep horizontal layout even on mobile */
+    gap: 0.5rem;
+  }
+
+  .viewButton, .verifyButton {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    height: 2.25rem;
   }
 
   .modalContent {

@@ -24,6 +24,11 @@ export const GetInTouch = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Function to check if text needs scrolling
+  const needsScrolling = (text) => {
+    return text && text.length > 25; // Adjust threshold as needed
+  };
+
   const socialLinks = [
     {
       id: "email",
@@ -40,7 +45,7 @@ export const GetInTouch = () => {
       platform: "WhatsApp",
       handle: "+62 853-5803-2274",
       description: "Let's chat instantly",
-      icon: "contact/whatsappIcon.png",
+      icon: "contact/whatsappIcon.svg",
       url: "https://wa.me/6285385032274",
       color: "#3b82f6",
       bgGradient: "from-blue-500/20 to-cyan-500/20",
@@ -70,7 +75,7 @@ export const GetInTouch = () => {
       platform: "Instagram",
       handle: "@rakhayandra_",
       description: "Follow my journey",
-      icon: "contact/instagramIcon.png",
+      icon: "contact/instagramIcon.svg",
       url: "https://www.instagram.com/rakhayandra_",
       color: "#22c55e",
       bgGradient: "from-green-500/20 to-teal-500/20",
@@ -156,7 +161,13 @@ export const GetInTouch = () => {
               {/* Content Section */}
               <div className={styles.contentSection}>
                 <h3 className={styles.platformName}>{link.platform}</h3>
-                <p className={styles.handleText}>{link.handle}</p>
+                {needsScrolling(link.handle) ? (
+                  <p className={`${styles.handleText} ${styles.scrolling}`}>
+                    <span className={styles.scrollingText}>{link.handle}</span>
+                  </p>
+                ) : (
+                  <p className={styles.handleText}>{link.handle}</p>
+                )}
                 <span className={styles.descriptionText}>
                   {link.description}
                 </span>

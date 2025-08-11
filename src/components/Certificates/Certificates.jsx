@@ -92,12 +92,6 @@ export const Certificates = () => {
                     className={styles.organizationLogo}
                   />
                 </div>
-                <div className={styles.badgeContainer}>
-                  <div className={styles.verifiedBadge}>
-                    <span className={styles.badgeIcon}>✓</span>
-                    <span>Verified</span>
-                  </div>
-                </div>
               </div>
 
               <div className={styles.cardContent}>
