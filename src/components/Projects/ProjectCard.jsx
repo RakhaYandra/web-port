@@ -17,6 +17,14 @@ export const ProjectCard = ({
 }) => {
   return (
     <div className={styles.container}>
+      {/* Liquid Glass Layers */}
+      <div className={styles.liquidLayer1}></div>
+      <div className={styles.liquidLayer2}></div>
+      <div className={styles.liquidLayer3}></div>
+
+      {/* Card Glow Effect */}
+      <div className={styles.cardGlow}></div>
+
       <div className={styles.imageContainer}>
         <img
           src={getImageUrl(imageSrc)}

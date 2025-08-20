@@ -46,6 +46,14 @@ export const Experience = () => {
                 }`}
                 style={{ "--delay": `${id * 0.2}s` }}
               >
+                {/* Liquid Glass Layers */}
+                <div className={styles.liquidLayer1}></div>
+                <div className={styles.liquidLayer2}></div>
+                <div className={styles.liquidLayer3}></div>
+
+                {/* Card Glow Effect */}
+                <div className={styles.cardGlow}></div>
+
                 <div className={styles.cardContent}>
                   <div className={styles.cardHeader}>
                     <div className={styles.logoContainer}>
