@@ -614,6 +614,40 @@
   }
 
   .subtitle {
+  .socialGroup {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .socialLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    row-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .socialLink {
+    width: 44px;
+    height: 44px;
+    margin: 0.25rem;
+  }
+  .scrollIndicator {
+    position: static;
+    margin: 2rem auto 0 auto;
+    left: unset;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .scrollText {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .scrollArrow {
+    width: 24px;
+    height: 24px;
+  }
     font-size: 1rem;
   }
 
