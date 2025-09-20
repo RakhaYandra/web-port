@@ -29,6 +29,14 @@ export const Hero = () => {
     { name: "Git", icon: "📚" },
   ];
 
+  // Track screen size for responsive scroll indicator
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className={styles.container}>
       {/* Simplified Background */}
@@ -206,7 +214,31 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator - always after social links, inside content */}
+        {/* Scroll Indicator - mobile only, inside content */}
+        {isMobile && (
+          <div className={styles.scrollIndicator}>
+            <div className={styles.scrollText}>Scroll to explore</div>
+            <div className={styles.scrollArrow}>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 5v14" />
+                <path d="M19 12l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Scroll Indicator - desktop only, outside content */}
+      {!isMobile && (
         <div className={styles.scrollIndicator}>
           <div className={styles.scrollText}>Scroll to explore</div>
           <div className={styles.scrollArrow}>
@@ -225,7 +257,7 @@ export const Hero = () => {
             </svg>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Enhanced Image Section */}
       <div
