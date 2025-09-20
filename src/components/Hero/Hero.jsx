@@ -205,6 +205,26 @@ export const Hero = () => {
             </a>
           </div>
         </div>
+
+        {/* Scroll Indicator - always after social links, inside content */}
+        <div className={styles.scrollIndicator}>
+          <div className={styles.scrollText}>Scroll to explore</div>
+          <div className={styles.scrollArrow}>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 5v14" />
+              <path d="M19 12l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
       </div>
 
       {/* Enhanced Image Section */}
@@ -240,26 +260,6 @@ export const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className={styles.scrollIndicator}>
-        <div className={styles.scrollText}>Scroll to explore</div>
-        <div className={styles.scrollArrow}>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M12 5v14" />
-            <path d="M19 12l-7 7-7-7" />
-          </svg>
         </div>
       </div>
     </section>
