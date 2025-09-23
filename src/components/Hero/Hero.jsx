@@ -265,7 +265,7 @@ export const Hero = () => {
           isLoaded ? styles.fadeInRight : ""
         }`}
       >
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer + " " + styles.animatedImage}>
           <div className={styles.imageFrame}>
             <img
               src={getImageUrl("hero/heroImage1.jpg")}

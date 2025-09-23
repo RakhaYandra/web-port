@@ -1,5 +1,15 @@
 [
   {
+    "title": "Python Essentials 2",
+    "issuingOrganization": "Cisco",
+    "date": "September 2025",
+    "credentialId": "74628d61-ae67-44d0-9c9c-6bd49bc13ec0",
+    "verificationUrl": "https://www.credly.com/earner/earned/badge/74628d61-ae67-44d0-9c9c-6bd49bc13ec0",
+    "skills": ["Python", "Computer Programming", "Software Development", "Algorithm Thinking", "Analytical Thinking"],
+    "description": "Cisco, in collaboration with OpenEDG Python Institute, verifies the earner of this badge successfully completed the Python Essentials 2 course and achieved the associate level credentials. Earners have advanced knowledge of the concepts of computer programming, the syntax and semantics of the Python language as well as demonstrate the ability to accomplish coding tasks related to intermediate-level programming in the Python language and resolve implementation challenges using the Python Standard Library and selected modules from the Python Standard Library.",
+    "imageSrc": "certificates/cisco.png"
+  },
+  {
     "title": "Belajar Back-End Pemula dengan JavaScript",
     "issuingOrganization": "Dicoding Indonesia",
     "date": "January 2025",
