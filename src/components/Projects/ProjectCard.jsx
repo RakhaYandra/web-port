@@ -79,10 +79,12 @@ export const ProjectCard = ({
 
       <div className={styles.content}>
         <div className={styles.header}>
-          <h3 className={styles.title}>{title}</h3>
-          <div className={styles.projectMeta}>
-            <span className={styles.workType}>{workType}</span>
-            {duration && <span className={styles.duration}>{duration}</span>}
+          <div className={styles.titleSection}>
+            <h3 className={styles.title}>{title}</h3>
+            <div className={styles.projectMeta}>
+              <span className={styles.workType}>{workType}</span>
+              {duration && <span className={styles.duration}>{duration}</span>}
+            </div>
           </div>
           <div className={styles.links}>
             <a
@@ -124,6 +126,14 @@ export const ProjectCard = ({
 
         <p className={styles.description}>{description}</p>
 
+        <div className={styles.skills}>
+          {skills.map((skill, id) => (
+            <span key={id} className={styles.skill}>
+              {skill}
+            </span>
+          ))}
+        </div>
+
         {/* Additional project details */}
         {(teamSize || advisor) && (
           <div className={styles.additionalInfo}>
@@ -141,14 +151,6 @@ export const ProjectCard = ({
             )}
           </div>
         )}
-
-        <div className={styles.skills}>
-          {skills.map((skill, id) => (
-            <span key={id} className={styles.skill}>
-              {skill}
-            </span>
-          ))}
-        </div>
 
         <div className={styles.actions}>
           <a

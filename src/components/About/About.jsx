@@ -143,23 +143,27 @@ export const About = () => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.aboutItem} ${styles.design}`}>
+            <div className={`${styles.aboutItem} ${styles.business}`}>
               <div className={styles.iconContainer}>
-                <img src={getImageUrl("about/uiIcon.png")} alt="UI/UX Design" />
+                <img
+                  src={getImageUrl("about/uiIcon.png")}
+                  alt="Business Analysis"
+                />
               </div>
               <div className={styles.aboutItemText}>
-                <h3>UI/UX Designer</h3>
+                <h3>Business Analyst</h3>
                 <p>
-                  Designing user-centered experiences through research,
-                  wireframing, and prototyping. Creating interfaces that are
-                  both beautiful, functional, and accessible to all users.
+                  Analyzing business processes and identifying opportunities for
+                  improvement through technology solutions. Bridging the gap
+                  between business needs and technical implementation to drive
+                  growth and efficiency.
                 </p>
                 <div className={styles.skills}>
-                  <span>Figma</span>
-                  <span>Design Systems</span>
-                  <span>Prototyping</span>
-                  <span>User Research</span>
-                  <span>Wireframing</span>
+                  <span>Business Analysis</span>
+                  <span>Process Optimization</span>
+                  <span>Data Analysis</span>
+                  <span>Strategic Planning</span>
+                  <span>Project Management</span>
                 </div>
               </div>
             </div>

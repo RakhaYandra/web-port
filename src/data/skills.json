@@ -104,5 +104,16 @@
     "Laravel",
     "Python",
     "PostgreSQL"
+  ],
+  "currentlyLearning": [
+    {
+      "title": "Go (Golang)",
+      "imageSrc": "skills/go.png",
+      "description": "Learning Go for backend development and microservices",
+      "progress": 35,
+      "status": "In Progress",
+      "startDate": "Sept, 2025",
+      "focusAreas": ["Concurrency", "Microservices", "Performance"]
+    }
   ]
 }

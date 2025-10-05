@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rakha Putra Pebri Yandra - Information Systems Student & Full-Stack Developer. Specializing in UI/UX design and software development." />
-    <meta name="keywords" content="portfolio, full-stack developer, UI/UX designer, React, Node.js, web development" />
+    <meta name="description" content="Rakha Putra Pebri Yandra - Full-Stack Developer & UI/UX Designer specializing in React, Node.js, and modern web technologies. Creating innovative digital solutions with passion for technology." />
+    <meta name="keywords" content="portfolio, full-stack developer, UI/UX designer, React, Node.js, web development, software engineer, Telkom University, JavaScript, frontend, backend" />
     <meta name="author" content="Rakha Putra Pebri Yandra" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#22c55e" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rakha Putra Pebri Yandra - Full-Stack Developer & UI/UX Designer" />
+    <meta property="og:description" content="Passionate Full-Stack Developer creating innovative digital solutions with expertise in React, Node.js, and modern web technologies." />
+    <meta property="og:image" content="https://rakhayandra.github.io/web-port/assets/hero/heroImage.jpg" />
+    <meta property="og:url" content="https://rakhayandra.github.io/web-port/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rakha Putra Pebri Yandra Portfolio" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rakha Putra Pebri Yandra - Full-Stack Developer" />
+    <meta name="twitter:description" content="Passionate Full-Stack Developer creating innovative digital solutions" />
+    <meta name="twitter:image" content="https://rakhayandra.github.io/web-port/assets/hero/heroImage.jpg" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rakha Putra Pebri Yandra",
+      "jobTitle": "Full-Stack Developer",
+      "description": "Full-Stack Developer and UI/UX Designer specializing in React, Node.js, and modern web technologies",
+      "url": "https://rakhayandra.github.io/web-port/",
+      "image": "https://rakhayandra.github.io/web-port/assets/hero/heroImage.jpg",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Telkom University"
+      },
+      "knowsAbout": ["React", "Node.js", "JavaScript", "UI/UX Design", "Full-Stack Development"],
+      "sameAs": [
+        "https://github.com/RakhaYandra",
+        "https://linkedin.com/in/rakha-putra-pebri-yandra"
+      ]
+    }
+    </script>
+    
     <title>Rakha Putra Pebri Yandra - Full-Stack Developer & UI/UX Designer</title>
   </head>
   <body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Basic CSS for Skip Link -->
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #22c55e;
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+        border-radius: 4px;
+        z-index: 9999;
+        transition: top 0.3s;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
+    </style>
   </body>
 </html>

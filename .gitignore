@@ -70,3 +70,7 @@ coverage/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
+
+ARCHITECTURE.md/
+IMPROVEMENT_PLAN.md/
+IMPROVEMENT_COMPLETED.md/

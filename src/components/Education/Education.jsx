@@ -31,7 +31,7 @@ export const Education = () => {
       major: "Information Systems",
       period: "2021 - 2025",
       location: "Bandung, Indonesia",
-      status: "Currently Enrolled",
+      status: "Graduated with Honors",
       gpa: "3.81/4.00",
       description:
         "Focused on software engineering principles, web development, and computer science fundamentals. Active in programming competitions and tech communities.",
@@ -46,8 +46,8 @@ export const Education = () => {
         "Computer Network Management",
         "Algorithms and Programming",
       ],
-      color: "#22c55e",
-      bgGradient: "from-green-500/20 to-emerald-500/20",
+      color: "#3b82f6",
+      bgGradient: "from-blue-500/20 to-cyan-500/20",
     },
     {
       id: "highschool",
@@ -59,7 +59,7 @@ export const Education = () => {
       status: "Graduated",
       gpa: "-",
       description:
-        "Specialized in Mathematics, Physics, and Chemistry. Developed strong analytical thinking and problem-solving skills that form the foundation for programming.",
+        "Specialized in Telecommunications Engineering with focus on Electronics and Network Systems. Developed strong technical foundation and problem-solving skills.",
       highlights: [
         "Electronics & Telecommunications",
         "Fiber Optics Technology",
@@ -156,7 +156,7 @@ export const Education = () => {
                     <span className={styles.period}>{education.period}</span>
                     <div
                       className={`${styles.statusIndicator} ${
-                        education.status === "Currently Enrolled"
+                        education.status === "Current"
                           ? styles.active
                           : styles.completed
                       }`}
@@ -170,7 +170,9 @@ export const Education = () => {
                   <div className={styles.degreeInfo}>
                     <h4 className={styles.degree}>{education.degree}</h4>
                     <p className={styles.major}>{education.major}</p>
-                    <div className={styles.gpa}>GPA: {education.gpa}</div>
+                    {education.gpa !== "-" && (
+                      <div className={styles.gpa}>GPA: {education.gpa}</div>
+                    )}
                   </div>
 
                   <p className={styles.description}>{education.description}</p>

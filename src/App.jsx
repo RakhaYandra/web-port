@@ -1,4 +1,5 @@
 import styles from "./App.module.css";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import { About } from "./components/About/About";
 import { Certificates } from "./components/Certificates/Certificates";
 import { Education } from "./components/Education/Education";
@@ -13,19 +14,26 @@ import { Skills } from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Navbar />
-      <Hero />
-      <About />
-      <Education />
-      <Skills />
-      <Experience />
-      <Certificates />
-      <Organizations />
-      <Publications />
-      <Projects />
-      <GetInTouch />
-    </div>
+    <ErrorBoundary>
+      <div className={styles.App}>
+        {/* Navigation */}
+        <Navbar />
+
+        {/* Main Content */}
+        <main id="main-content" role="main">
+          <Hero />
+          <About />
+          <Education />
+          <Skills />
+          <Experience />
+          <Certificates />
+          <Organizations />
+          <Publications />
+          <Projects />
+          <GetInTouch />
+        </main>
+      </div>
+    </ErrorBoundary>
   );
 }
 

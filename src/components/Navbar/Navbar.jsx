@@ -128,12 +128,15 @@ export const Navbar = () => {
           </ul>
         </div>
 
-        <a
-          href="mailto:rakhaputrapebriyandra272@gmail.com"
-          className={styles.ctaButton}
-        >
-          Let&apos;s Talk
-        </a>
+        {/* CTA Button */}
+        <div className={styles.navActions}>
+          <a
+            href="mailto:rakhaputrapebriyandra272@gmail.com"
+            className={styles.ctaButton}
+          >
+            Let&apos;s Talk
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -343,6 +343,19 @@
   }
 }
 
+/* Navigation Actions */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+@media screen and (max-width: 768px) {
+  .navActions {
+    gap: var(--spacing-sm);
+  }
+}
+
 /* Add padding to body to account for fixed navbar */
 :global(body) {
   padding-top: 70px;
