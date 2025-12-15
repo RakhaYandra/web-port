@@ -1,5 +1,13 @@
 [
   {
+    "role": "Backend Developer",
+    "organisation": "Technova Integrasi Solusi",
+    "startDate": "Sep, 2025",
+    "endDate": "Dec, 2025",
+    "experiences": ["Designed and developed clean, efficient RESTful APIs and data processing services, improving system stability by 30% and reducing feature integration time by 25%.", " Collaborated with cross-functional teams to gather requirements and deliver backend solutions that enhanced application performance by 20%.", "Implemented export and import features for Excel and PDF, including dynamic PDF templates with accurate data mapping and structured Excel processing, reducing manual reporting effort by 40% and lowering data inconsistencies by 35%."],
+    "imageSrc": "history/technovaid.png"
+  },
+  {
     "role": "Frontend Developer",
     "organisation": "Sagara Technology",
     "startDate": "Aug, 2024",

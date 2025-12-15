@@ -110,10 +110,27 @@
       "title": "Go (Golang)",
       "imageSrc": "skills/go.png",
       "description": "Learning Go for backend development and microservices",
-      "progress": 35,
+      "progress": 45,
       "status": "In Progress",
       "startDate": "Sept, 2025",
-      "focusAreas": ["Concurrency", "Microservices", "Performance"]
+      "focusAreas": [
+        "Concurrency",
+        "Microservices",
+        "Performance"
+      ]
+    },
+    {
+      "title": "C#",
+      "imageSrc": "skills/csharp.png",
+      "description": "Enhancing skills in C# in .NET environment",
+      "progress": 30,
+      "status": "In Progress",
+      "startDate": "Nov, 2025",
+      "focusAreas": [
+        "OOP",
+        "ASP.NET",
+        "Entity Framework"
+      ]
     }
   ]
 }
