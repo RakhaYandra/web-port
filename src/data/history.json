@@ -1,10 +1,26 @@
 [
   {
+    "role": "Frontend Developer",
+    "organisation": "Arna Teknologi Peduli",
+    "startDate": "Nov, 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Contributed to the development of Pertamina Learning Hub (PLH), a learning management platform for Pertamina, by implementing responsive frontend features.",
+      "Translated UI/UX designs into reusable React components while ensuring consistency, responsiveness, and accessibility across the application.",
+      "Worked closely with backend developers, QA engineers, and stakeholders to support UAT, validate frontend functionality, and deliver production-ready features."
+    ],
+    "imageSrc": "history/arna.png"
+  },
+  {
     "role": "Backend Developer",
     "organisation": "Technova Integrasi Solusi",
     "startDate": "Sep, 2025",
     "endDate": "Dec, 2025",
-    "experiences": ["Designed and developed clean, efficient RESTful APIs and data processing services, improving system stability by 30% and reducing feature integration time by 25%.", " Collaborated with cross-functional teams to gather requirements and deliver backend solutions that enhanced application performance by 20%.", "Implemented export and import features for Excel and PDF, including dynamic PDF templates with accurate data mapping and structured Excel processing, reducing manual reporting effort by 40% and lowering data inconsistencies by 35%."],
+    "experiences": [
+      "Contributed to the development of the WorkForce Management (WFM) web application for PT Asianet Media Teknologi by designing and implementing RESTful APIs and backend services.",
+      "Implemented Excel and PDF export/import features, including dynamic PDF templates with accurate data mapping and structured Excel processing, reducing manual reporting effort by 40% and lowering data inconsistencies by 35%.",
+      "Collaborated with frontend developers, QA engineers, and stakeholders to deliver scalable backend solutions, improving system stability by 30% and reducing feature integration time by 25%."
+    ],
     "imageSrc": "history/technovaid.png"
   },
   {
@@ -12,7 +28,11 @@
     "organisation": "Sagara Technology",
     "startDate": "Aug, 2024",
     "endDate": "Feb, 2025",
-    "experiences": ["Developed a landing page using WordPress, focusing on frontend design and responsiveness.", "Collaborated on a room booking website using React, ensuring a smooth user interface.", "Coordinated with a cross-functional team to deliver high-quality frontend solutions."],
+    "experiences": [
+      "Developed a landing page using WordPress, focusing on frontend design and responsiveness.",
+      "Collaborated on a room booking website using React, ensuring a smooth and intuitive user interface.",
+      "Worked with cross-functional teams to deliver high-quality frontend solutions following project requirements."
+    ],
     "imageSrc": "history/sagara.png"
   },
   {
@@ -20,7 +40,11 @@
     "organisation": "Telkomsel",
     "startDate": "Jun, 2024",
     "endDate": "Sep, 2024",
-    "experiences": ["Developed and maintained web applications using Laravel.", "Created API documentation with Swagger.", "Implemented end-to-end tests using Cypress."],
+    "experiences": [
+      "Developed and maintained web applications using Laravel.",
+      "Created and maintained REST API documentation using Swagger.",
+      "Implemented end-to-end testing with Cypress to improve application reliability and release quality."
+    ],
     "imageSrc": "history/telkomsel.png"
   },
   {
@@ -29,11 +53,11 @@
     "startDate": "Feb, 2024",
     "endDate": "Jun, 2024",
     "experiences": [
-          "Ensured full resource availability for Computer Network Practicum.",
-          "Guided practitioners to perfect scores in Cisco Packet Tracer.",
-          "Enhanced student confidence with innovative teaching methods.",
-          "Boosted engagement and completion rates through team collaboration."
-        ],
+      "Ensured full resource availability for Computer Network Practicum.",
+      "Guided students in Cisco Packet Tracer networking labs, helping them achieve excellent practical results.",
+      "Applied engaging teaching methods to improve students' understanding and confidence in networking concepts.",
+      "Collaborated with fellow assistants to increase engagement and practicum completion rates."
+    ],
     "imageSrc": "history/sisjar.png"
   }
 ]
