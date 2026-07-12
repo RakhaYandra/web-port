@@ -2,6 +2,16 @@
   "categories": {
     "Solo": [
       {
+        "title": "Wedding Tracker Planner",
+        "imageSrc": "projects/project.png",
+        "description": "Just helping my sister to plan her wedding, I made a spreadsheet to track all the wedding plans and tasks. Built with excel and Google Sheets.",
+        "skills": ["Excel", "Google Sheets"],
+        "demo": "https://github.com/RakhaYandra/wedding-tracker.git",
+        "source": "https://github.com/RakhaYandra/wedding-tracker.git",
+        "workType": "Solo",
+        "duration": "1 Day"
+      },
+      {
         "title": "To Do List",
         "imageSrc": "projects/project.png",
         "description": "A simple To Do List app made using Python.",
