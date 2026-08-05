@@ -95,32 +95,58 @@ export const GetInTouch = () => {
         {/* Hero Section */}
         <div className={styles.heroSection}>
           <div
-            className={`${styles.availabilityBadge} ${
-              isVisible ? styles.fadeInUp : ""
-            }`}
+            className={`${styles.availabilityBadge} ${isVisible ? styles.fadeInUp : ""
+              }`}
           >
             <div className={styles.pulseIndicator}></div>
-            <span>🚀 Ready for new challenges</span>
+            <span>💼 Available for Full-Time IT Opportunities</span>
           </div>
 
           <h2
-            className={`${styles.mainTitle} ${
-              isVisible ? styles.slideInLeft : ""
-            }`}
+            className={`${styles.mainTitle} ${isVisible ? styles.slideInLeft : ""
+              }`}
           >
-            Let's Create Something
-            <span className={styles.highlightText}> Extraordinary</span>
+            Let&apos;s Discuss Career
+            <span className={styles.highlightText}> Collaborations</span>
           </h2>
 
           <p
-            className={`${styles.subtitle} ${
-              isVisible ? styles.slideInRight : ""
-            }`}
+            className={`${styles.subtitle} ${isVisible ? styles.slideInRight : ""
+              }`}
           >
-            Have an innovative project in mind? I'm passionate about turning
-            bold ideas into powerful digital solutions. Let's collaborate and
-            build the future together.
+            Whether you are looking to hire a versatile IT professional, discuss digital transformation, or collaborate on tech solutions, I am always open to new opportunities. Let&apos;s connect.
           </p>
+
+          <div className={styles.heroActions}>
+            <a
+              href="mailto:rakhaputrapebriyandra272@gmail.com"
+              className={styles.primaryButton}
+            >
+              <span>Let&apos;s Talk</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M13 7L7 13" />
+                <path d="M7 7h6v6" />
+              </svg>
+            </a>
+
+            <a
+              href="https://wa.me/6285385032274"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondaryButton}
+            >
+              <span>Quick Chat</span>
+            </a>
+          </div>
         </div>
 
         {/* Contact Methods Grid */}
@@ -133,9 +159,8 @@ export const GetInTouch = () => {
               rel={
                 link.platform !== "Email" ? "noopener noreferrer" : undefined
               }
-              className={`${styles.contactCard} ${
-                isVisible ? styles.cardSlideUp : ""
-              }`}
+              className={`${styles.contactCard} ${isVisible ? styles.cardSlideUp : ""
+                }`}
               style={{
                 "--animation-delay": `${index * 0.15}s`,
                 "--accent-color": link.color,
@@ -191,7 +216,7 @@ export const GetInTouch = () => {
                   strokeLinejoin="round"
                 >
                   <path d="M7 17L17 7" />
-                  <path d="M7 7h10v10" />
+                  <path d="M7 7h6v6" />
                 </svg>
               </div>
 
@@ -201,52 +226,6 @@ export const GetInTouch = () => {
               )}
             </a>
           ))}
-        </div>
-
-        {/* Call to Action Section */}
-        <div
-          className={`${styles.ctaSection} ${isVisible ? styles.bounceIn : ""}`}
-        >
-          <div className={styles.ctaContainer}>
-            <div className={styles.ctaContent}>
-              <h3 className={styles.ctaTitle}>Ready to Start?</h3>
-              <p className={styles.ctaDescription}>
-                Let's turn your vision into reality. I'm just one message away
-                from making it happen.
-              </p>
-            </div>
-
-            <div className={styles.ctaActions}>
-              <a
-                href="mailto:rakhaputrapebriyandra272@gmail.com"
-                className={styles.primaryButton}
-              >
-                <span>Let's Talk</span>
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M13 7L7 13" />
-                  <path d="M7 7h6v6" />
-                </svg>
-              </a>
-
-              <a
-                href="https://wa.me/6285385032274"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.secondaryButton}
-              >
-                <span>Quick Chat</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -11,6 +11,7 @@ import { Organizations } from "./components/Organizations/Organizations";
 import { Projects } from "./components/Projects/Projects";
 import { Publications } from "./components/Publications/Publications";
 import { Skills } from "./components/Skills/Skills";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           <Projects />
           <GetInTouch />
         </main>
+        
+        {/* Footer */}
+        <Footer />
       </div>
     </ErrorBoundary>
   );

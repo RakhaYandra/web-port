@@ -5,8 +5,9 @@ import skillsData from "../../data/skills.json";
 
 export const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("Frontend");
+  const [activeCategory, setActiveCategory] = useState("Development");
   const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [imageErrors, setImageErrors] = useState({});
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export const Skills = () => {
         </h2>
         <p className={`${styles.subtitle} ${isVisible ? styles.fadeInUp : ""}`}>
           Technologies and tools I use to bring digital ideas to life, plus what
-          I'm currently exploring
+          I&apos;m currently exploring
         </p>
       </div>
 
@@ -99,10 +100,19 @@ export const Skills = () => {
                     onMouseLeave={() => setHoveredSkill(null)}
                   >
                     <div className={styles.skillIcon}>
-                      <img
-                        src={getImageUrl(skill.imageSrc)}
-                        alt={skill.title}
-                      />
+                      {imageErrors[skill.title] ? (
+                        <div className={styles.fallbackIcon}>
+                          <span className={styles.fallbackText}>{skill.title.charAt(0)}</span>
+                        </div>
+                      ) : (
+                        <img
+                          src={getImageUrl(skill.imageSrc)}
+                          alt={skill.title}
+                          onError={() => {
+                            setImageErrors((prev) => ({ ...prev, [skill.title]: true }));
+                          }}
+                        />
+                      )}
                       <div
                         className={`${styles.skillGlow} ${
                           hoveredSkill === skill.title ? styles.glowActive : ""
@@ -157,7 +167,7 @@ export const Skills = () => {
             <div className={styles.badgeIcon}>🚀</div>
             <span>Currently Exploring</span>
           </div>
-          <h3 className={styles.learningTitle}>What I'm Learning Now</h3>
+          <h3 className={styles.learningTitle}>What I&apos;m Learning Now</h3>
           <p className={styles.learningSubtitle}>
             Continuously expanding my skillset with new technologies and
             frameworks
@@ -166,15 +176,24 @@ export const Skills = () => {
 
         <div className={styles.currentlyLearningContainer}>
           {skillsData.currentlyLearning &&
-            skillsData.currentlyLearning.map((skill, index) => (
+            skillsData.currentlyLearning.map((skill) => (
               <div key={skill.title} className={styles.learningItem}>
                 <div className={styles.learningCardHeader}>
                   <div className={styles.learningIcon}>
-                    <img
-                      src={getImageUrl(skill.imageSrc)}
-                      alt={skill.title}
-                      className={styles.learningIconImage}
-                    />
+                    {imageErrors[skill.title] ? (
+                      <div className={styles.fallbackIcon}>
+                        <span className={styles.fallbackText}>{skill.title.charAt(0)}</span>
+                      </div>
+                    ) : (
+                      <img
+                        src={getImageUrl(skill.imageSrc)}
+                        alt={skill.title}
+                        className={styles.learningIconImage}
+                        onError={() => {
+                          setImageErrors((prev) => ({ ...prev, [skill.title]: true }));
+                        }}
+                      />
+                    )}
                     <div className={styles.learningGlow}></div>
                   </div>
                   <div className={styles.learningStatus}>

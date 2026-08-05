@@ -114,133 +114,127 @@ export const Education = () => {
           </h2>
 
           <p
-            className={`${styles.subtitle} ${
-              isVisible ? styles.slideInRight : ""
-            }`}
+            className={`${styles.subtitle} ${isVisible ? styles.slideInRight : ""
+              }`}
           >
             My academic path has equipped me with a solid foundation in computer
             science, software engineering, and analytical thinking, fueling my
             drive for innovation and technology.
           </p>
         </div>
-        {/* Education Timeline */}
-        <div className={styles.timeline}>
-          {educationData.map((education, index) => (
-            <div
-              key={education.id}
-              className={`${styles.timelineItem} ${
-                isVisible ? styles.slideUp : ""
-              }`}
-              style={{
-                "--delay": `${index * 0.2}s`,
-                "--accent-color": education.color,
-              }}
-              onMouseEnter={() => setActiveCard(education.id)}
-              onMouseLeave={() => setActiveCard(null)}
-            >
-              {/* Timeline Line */}
-              <div className={styles.timelineLine}>
-                <div className={styles.timelineDot}></div>
-              </div>
+        <div className={styles.mainContent}>
+          {/* Education Timeline */}
+          <div className={styles.timeline}>
+            {educationData.map((education, index) => (
+              <div
+                key={education.id}
+                className={`${styles.timelineItem} ${isVisible ? styles.slideUp : ""
+                  }`}
+                style={{
+                  "--delay": `${index * 0.2}s`,
+                  "--accent-color": education.color,
+                }}
+                onMouseEnter={() => setActiveCard(education.id)}
+                onMouseLeave={() => setActiveCard(null)}
+              >
+                {/* Timeline Line */}
+                <div className={styles.timelineLine}>
+                  <div className={styles.timelineDot}></div>
+                </div>
 
-              {/* Education Card */}
-              <div className={styles.educationCard}>
-                <div className={styles.cardHeader}>
-                  <div className={styles.institutionInfo}>
-                    <h3 className={styles.institution}>
-                      {education.institution}
-                    </h3>
-                    <div className={styles.location}>{education.location}</div>
-                  </div>
-                  <div className={styles.periodBadge}>
-                    <span className={styles.period}>{education.period}</span>
-                    <div
-                      className={`${styles.statusIndicator} ${
-                        education.status === "Current"
+                {/* Education Card */}
+                <div className={styles.educationCard}>
+                  <div className={styles.cardHeader}>
+                    <div className={styles.institutionInfo}>
+                      <h3 className={styles.institution}>
+                        {education.institution}
+                      </h3>
+                      <div className={styles.location}>{education.location}</div>
+                    </div>
+                    <div className={styles.periodBadge}>
+                      <span className={styles.period}>{education.period}</span>
+                      <div
+                        className={`${styles.statusIndicator} ${education.status === "Current"
                           ? styles.active
                           : styles.completed
-                      }`}
-                    >
-                      {education.status}
+                          }`}
+                      >
+                        {education.status}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={styles.cardBody}>
-                  <div className={styles.degreeInfo}>
-                    <h4 className={styles.degree}>{education.degree}</h4>
-                    <p className={styles.major}>{education.major}</p>
-                    {education.gpa !== "-" && (
-                      <div className={styles.gpa}>GPA: {education.gpa}</div>
-                    )}
-                  </div>
+                  <div className={styles.cardBody}>
+                    <div className={styles.degreeInfo}>
+                      <h4 className={styles.degree}>{education.degree}</h4>
+                      <p className={styles.major}>{education.major}</p>
+                      {education.gpa !== "-" && (
+                        <div className={styles.gpa}>GPA: {education.gpa}</div>
+                      )}
+                    </div>
 
-                  <p className={styles.description}>{education.description}</p>
+                    <p className={styles.description}>{education.description}</p>
 
-                  <div className={styles.highlights}>
-                    <h5 className={styles.highlightsTitle}>Key Subjects:</h5>
-                    <div className={styles.highlightsList}>
-                      {education.highlights.map((highlight, idx) => (
-                        <span key={idx} className={styles.highlightItem}>
-                          {highlight}
-                        </span>
-                      ))}
+                    <div className={styles.highlights}>
+                      <h5 className={styles.highlightsTitle}>Key Subjects:</h5>
+                      <div className={styles.highlightsList}>
+                        {education.highlights.map((highlight, idx) => (
+                          <span key={idx} className={styles.highlightItem}>
+                            {highlight}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Card Glow Effect */}
-                {activeCard === education.id && (
-                  <div className={styles.cardGlow}></div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-        {/* Achievements Section */}
-        <div
-          className={`${styles.achievementsSection} ${
-            isVisible ? styles.fadeIn : ""
-          }`}
-        >
-          <h3 className={styles.achievementsTitle}>Academic Achievements</h3>
-          <div className={styles.achievementsGrid}>
-            {achievements.map((achievement, index) => (
-              <div
-                key={index}
-                className={`${styles.achievementCard} ${
-                  isVisible ? styles.bounceIn : ""
-                }`}
-                style={{ "--delay": `${0.6 + index * 0.1}s` }}
-              >
-                <div className={styles.achievementIcon}>{achievement.icon}</div>
-                <h4 className={styles.achievementTitle}>{achievement.title}</h4>
-                <p className={styles.achievementDescription}>
-                  {achievement.description}
-                </p>
+                  {/* Card Glow Effect */}
+                  {activeCard === education.id && (
+                    <div className={styles.cardGlow}></div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
-        </div>
-        {/* Current Focus */}
-        <div
-          className={`${styles.currentFocus} ${
-            isVisible ? styles.slideUp : ""
-          }`}
-        >
-          <div className={styles.focusContent}>
-            <h3 className={styles.focusTitle}>Currently Focusing On</h3>
-            <p className={styles.focusDescription}>
-              Advancing my knowledge in modern web technologies, cloud
-              computing, and software architecture while completing my degree
-              with excellence.
-            </p>
-            <div className={styles.focusAreas}>
-              <span className={styles.focusArea}>Advanced Web Development</span>
-              <span className={styles.focusArea}>Software System Analysis</span>
-              <span className={styles.focusArea}>Software Architecture</span>
-              <span className={styles.focusArea}>Business Analysis</span>
-              <span className={styles.focusArea}>Automation Tester</span>
+          {/* Achievements Section */}
+          <div
+            className={`${styles.achievementsSection} ${isVisible ? styles.fadeIn : ""
+              }`}
+          >
+            <h3 className={styles.achievementsTitle}>Academic Achievements</h3>
+            <div className={styles.achievementsGrid}>
+              {achievements.map((achievement, index) => (
+                <div
+                  key={index}
+                  className={`${styles.achievementCard} ${isVisible ? styles.bounceIn : ""
+                    }`}
+                  style={{ "--delay": `${0.6 + index * 0.1}s` }}
+                >
+                  <div className={styles.achievementIcon}>{achievement.icon}</div>
+                  <h4 className={styles.achievementTitle}>{achievement.title}</h4>
+                  <p className={styles.achievementDescription}>
+                    {achievement.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* Current Focus */}
+          <div
+            className={`${styles.currentFocus} ${isVisible ? styles.slideUp : ""
+              }`}
+          >
+            <div className={styles.focusContent}>
+              <h3 className={styles.focusTitle}>Currently Focusing On</h3>
+              <p className={styles.focusDescription}>
+                Leveraging my academic honors (Cum Laude) and industry experience to transition into full-time IT roles, while expanding my expertise in enterprise architecture, cloud computing, and test automation.
+              </p>
+              <div className={styles.focusAreas}>
+                <span className={styles.focusArea}>Advanced Web Development</span>
+                <span className={styles.focusArea}>Software System Analysis</span>
+                <span className={styles.focusArea}>Software Architecture</span>
+                <span className={styles.focusArea}>Business Analysis</span>
+                <span className={styles.focusArea}>Automation Tester</span>
+              </div>
             </div>
           </div>
         </div>

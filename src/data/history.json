@@ -1,26 +1,28 @@
 [
   {
-    "role": "Frontend Developer",
+    "role": "Software Developer (Blazor & .NET)",
     "organisation": "Arna Teknologi Peduli",
     "startDate": "Nov, 2025",
     "endDate": "Present",
     "experiences": [
-      "Contributed to the development of Pertamina Learning Hub (PLH), a learning management platform for Pertamina, by implementing responsive frontend features.",
-      "Translated UI/UX designs into reusable React components while ensuring consistency, responsiveness, and accessibility across the application.",
-      "Worked closely with backend developers, QA engineers, and stakeholders to support UAT, validate frontend functionality, and deliver production-ready features."
+      "Developed and optimized key web features for the Pertamina Learning Hub (PLH) using Blazor and .NET Core, improving application responsiveness and user navigation flow across devices.",
+      "Translated UI/UX designs into reusable Razor components while ensuring consistency, responsiveness, and web accessibility standards.",
+      "Collaborated with backend engineers, QA teams, and stakeholders to support UAT, validate frontend functionality, and deliver production-ready features."
     ],
+    "techStack": ["Blazor", ".NET Core", "C#", "HTML5", "CSS3"],
     "imageSrc": "history/arna.png"
   },
   {
-    "role": "Backend Developer",
+    "role": "Backend Developer (Golang)",
     "organisation": "Technova Integrasi Solusi",
     "startDate": "Sep, 2025",
     "endDate": "Dec, 2025",
     "experiences": [
-      "Contributed to the development of the WorkForce Management (WFM) web application for PT Asianet Media Teknologi by designing and implementing RESTful APIs and backend services.",
-      "Implemented Excel and PDF export/import features, including dynamic PDF templates with accurate data mapping and structured Excel processing, reducing manual reporting effort by 40% and lowering data inconsistencies by 35%.",
-      "Collaborated with frontend developers, QA engineers, and stakeholders to deliver scalable backend solutions, improving system stability by 30% and reducing feature integration time by 25%."
+      "Engineered scalable RESTful APIs and backend services for a WorkForce Management (WFM) web application for PT Asianet Media Teknologi using Golang and the Gin framework.",
+      "Implemented high-performance Excel and PDF import/export features, including dynamic template rendering and structured processing, reducing manual reporting effort by 40%.",
+      "Collaborated with frontend and QA teams to integrate endpoints and optimize PostgreSQL database queries, improving system stability by 30%."
     ],
+    "techStack": ["Golang", "Gin", "PostgreSQL", "REST API"],
     "imageSrc": "history/technovaid.png"
   },
   {
@@ -29,35 +31,37 @@
     "startDate": "Aug, 2024",
     "endDate": "Feb, 2025",
     "experiences": [
-      "Developed a landing page using WordPress, focusing on frontend design and responsiveness.",
-      "Collaborated on a room booking website using React, ensuring a smooth and intuitive user interface.",
-      "Worked with cross-functional teams to deliver high-quality frontend solutions following project requirements."
+      "Built and launched responsive landing pages using WordPress and Custom CSS, increasing site accessibility and visitor engagement metrics.",
+      "Co-developed an intuitive room booking system using React and JavaScript, simplifying the reservation workflow and enhancing the user interface consistency.",
+      "Participated in Agile sprints and design reviews, aligning technical requirements with business needs to deliver client-ready solutions."
     ],
+    "techStack": ["React", "JavaScript", "WordPress", "CSS3"],
     "imageSrc": "history/sagara.png"
   },
   {
-    "role": "Information Technology Developer Intern",
+    "role": "IT Developer Intern",
     "organisation": "Telkomsel",
     "startDate": "Jun, 2024",
     "endDate": "Sep, 2024",
     "experiences": [
-      "Developed and maintained web applications using Laravel.",
-      "Created and maintained REST API documentation using Swagger.",
-      "Implemented end-to-end testing with Cypress to improve application reliability and release quality."
+      "Developed and maintained web application features using Laravel and MySQL, contributing to internal software updates and feature rollouts.",
+      "Designed and documented comprehensive RESTful API endpoints using Swagger, clarifying integrations and improving developer collaboration.",
+      "Built end-to-end automated testing scripts using Cypress, which improved application release stability and reduced manual QA testing cycles."
     ],
+    "techStack": ["Laravel", "MySQL", "Swagger", "Cypress"],
     "imageSrc": "history/telkomsel.png"
   },
   {
-    "role": "Computer Network Management Practicum Assistant",
+    "role": "Computer Network Practicum Assistant",
     "organisation": "SISJAR Labs",
     "startDate": "Feb, 2024",
     "endDate": "Jun, 2024",
     "experiences": [
-      "Ensured full resource availability for Computer Network Practicum.",
-      "Guided students in Cisco Packet Tracer networking labs, helping them achieve excellent practical results.",
-      "Applied engaging teaching methods to improve students' understanding and confidence in networking concepts.",
-      "Collaborated with fellow assistants to increase engagement and practicum completion rates."
+      "Administered and maintained lab network configurations, ensuring 100% resource availability for computer network practicums.",
+      "Instructed 100+ students in hands-on networking labs using Cisco Packet Tracer, focusing on routing, switching, and network troubleshooting.",
+      "Collaborated with lab staff to develop interactive lab exercises, boosting practicum completion rates by 15%."
     ],
+    "techStack": ["Cisco Packet Tracer", "Network Management", "Routing & Switching"],
     "imageSrc": "history/sisjar.png"
   }
 ]

@@ -74,3 +74,6 @@ coverage/
 ARCHITECTURE.md/
 IMPROVEMENT_PLAN.md/
 IMPROVEMENT_COMPLETED.md/
+
+# Claude Directory
+.claude/

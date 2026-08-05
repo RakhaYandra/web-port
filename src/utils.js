@@ -118,6 +118,7 @@ export const formatDate = (dateString, options = {}) => {
   try {
     return new Intl.DateTimeFormat('en-US', defaultOptions).format(new Date(dateString));
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.warn('Invalid date string:', dateString);
     return dateString;
   }

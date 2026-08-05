@@ -153,19 +153,17 @@ export const Projects = () => {
               <span className={styles.statLabel}>Total Projects</span>
             </div>
           </div>
-        </div>
 
-        <div className={styles.filterContainer}>
-          <div className={styles.filters}>
-            {/* Project Type Categories */}
-            <button
-              className={`${styles.filterBtn} ${
-                filter === "all" ? styles.active : ""
-              }`}
-              onClick={() => setFilter("all")}
-            >
-              All Projects
-            </button>
+          <div className={styles.filterContainer}>
+            <div className={styles.filters}>
+              <button
+                className={`${styles.filterBtn} ${
+                  filter === "all" ? styles.active : ""
+                }`}
+                onClick={() => setFilter("all")}
+              >
+                All Projects
+              </button>
             {projectsData.projectTypes.map((type) => (
               <button
                 key={type.name}
@@ -199,8 +197,9 @@ export const Projects = () => {
             ))}
           </div>
         </div>
+      </div>
 
-        <div className={styles.projectsContainer}>
+      <div className={styles.projectsContainer}>
           <div className={styles.projects}>
             {filteredProjects().map((project, id) => (
               <div

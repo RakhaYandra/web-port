@@ -27,15 +27,15 @@ export const Experience = () => {
 
   return (
     <section className={styles.container} id="experience" ref={sectionRef}>
-      <div className={styles.sectionHeader}>
-        <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
-          Professional Journey
-        </h2>
-        <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
-          Crafting digital experiences through meaningful collaborations
-        </p>
-      </div>
       <div className={styles.content}>
+        <div className={styles.sectionHeader}>
+          <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
+            Professional Journey
+          </h2>
+          <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
+            Crafting digital experiences through meaningful collaborations
+          </p>
+        </div>
         <div className={styles.experienceGrid}>
           {history.map((historyItem, id) => {
             return (

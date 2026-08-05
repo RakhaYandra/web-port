@@ -87,25 +87,25 @@ export const Organizations = () => {
         </div>
       </div>
 
-      <div className={styles.sectionHeader}>
-        <h2
-          className={`${styles.title} ${styles.slideUp} ${styles.forceVisible}`}
-        >
-          Professional Organizations
-        </h2>
-        <p
-          className={`${styles.subtitle} ${styles.slideUp} ${styles.forceVisible}`}
-        >
-          Building communities and driving innovation through collaboration
-        </p>
-      </div>
-
       <div className={styles.content}>
+        <div className={styles.sectionHeader}>
+          <h2
+            className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}
+          >
+            Professional Organizations
+          </h2>
+          <p
+            className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}
+          >
+            Building communities and driving innovation through collaboration
+          </p>
+        </div>
+
         <div className={styles.timeline}>
           {sortedOrganizations.map((org, id) => (
             <div
               key={id}
-              className={`${styles.timelineItem} ${styles.slideIn} ${styles.forceVisible}`}
+              className={`${styles.timelineItem} ${isVisible ? styles.slideIn : ""}`}
               style={{ "--delay": `${id * 0.2}s` }}
             >
               <div className={styles.timelineMarker}>

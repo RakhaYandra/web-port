@@ -23,10 +23,10 @@ export const Hero = () => {
   const techStack = [
     { name: "React", icon: "⚛️" },
     { name: "JavaScript", icon: "🟨" },
-    { name: "PHP", icon: "🔷" },
-    { name: "Node.js", icon: "💚" },
-    { name: "CSS3", icon: "🎨" },
-    { name: "Git", icon: "📚" },
+    { name: "Golang", icon: "🐹" },
+    { name: "Laravel", icon: "🔷" },
+    { name: "PostgreSQL", icon: "🐘" },
+    { name: "Cypress", icon: "🌲" },
   ];
 
   // Track screen size for responsive scroll indicator
@@ -67,11 +67,10 @@ export const Hero = () => {
           <h1 className={styles.title}>
             Hi, I&apos;m <span className={styles.titleName}>Rakha Putra</span>
             <br />
-            <span className={styles.titleRole}>Web Developer</span>
+            <span className={styles.titleRole}>Information Systems Graduate</span>
           </h1>
           <p className={styles.subtitle}>
-            Passionate Information Systems student crafting beautiful digital
-            experiences through clean code and creative design.
+            Bridging the gap between business processes and technology. An honors graduate (Cum Laude) with professional software development experience, analytical thinking, and the versatility to drive value across diverse IT functions.
           </p>
         </div>
 
@@ -80,16 +79,16 @@ export const Hero = () => {
           className={`${styles.quickStats} ${isLoaded ? styles.fadeInUp : ""}`}
         >
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>Fresh</div>
-            <div className={styles.statLabel}>Graduate</div>
+            <div className={styles.statNumber}>Cum Laude</div>
+            <div className={styles.statLabel}>Telkom University</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statNumber}>5+</div>
-            <div className={styles.statLabel}>Projects</div>
+            <div className={styles.statLabel}>Deployed Solutions</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>100%</div>
-            <div className={styles.statLabel}>Passion</div>
+            <div className={styles.statNumber}>1.5+ Yrs</div>
+            <div className={styles.statLabel}>Combined Experience</div>
           </div>
         </div>
 
@@ -269,7 +268,7 @@ export const Hero = () => {
           <div className={styles.imageFrame}>
             <img
               src={getImageUrl("hero/heroImage1.jpg")}
-              alt="Rakha Putra Pebri Yandra - Frontend Developer"
+              alt="Rakha Putra Pebri Yandra - Information Systems Graduate"
               className={styles.heroImage}
             />
             <div className={styles.imageOverlay}></div>

@@ -4,10 +4,7 @@
   position: relative;
   width: 100%;
   padding: 6rem max(2rem, calc((100% - 1400px) / 2));
-  background: 
-    radial-gradient(ellipse 800px 600px at 30% 10%, rgba(34, 197, 94, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 600px 400px at 70% 90%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-    linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 30%, #16213e 70%, #0f0f1a 100%);
+  background: transparent;
   overflow: hidden;
   z-index: 50;
 }
@@ -27,17 +24,20 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: 
-    linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+  background-image: none;
   background-size: 50px 50px;
   animation: networkMove 25s linear infinite;
   opacity: 0.3;
 }
 
 @keyframes networkMove {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(50px, 50px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50px, 50px);
+  }
 }
 
 .floatingNodes {
@@ -57,19 +57,45 @@
   box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
 }
 
-.node:nth-child(1) { top: 15%; left: 15%; }
-.node:nth-child(2) { top: 25%; right: 20%; }
-.node:nth-child(3) { top: 55%; left: 25%; }
-.node:nth-child(4) { bottom: 30%; right: 15%; }
-.node:nth-child(5) { top: 70%; left: 60%; }
-.node:nth-child(6) { top: 40%; right: 40%; }
+.node:nth-child(1) {
+  top: 15%;
+  left: 15%;
+}
+
+.node:nth-child(2) {
+  top: 25%;
+  right: 20%;
+}
+
+.node:nth-child(3) {
+  top: 55%;
+  left: 25%;
+}
+
+.node:nth-child(4) {
+  bottom: 30%;
+  right: 15%;
+}
+
+.node:nth-child(5) {
+  top: 70%;
+  left: 60%;
+}
+
+.node:nth-child(6) {
+  top: 40%;
+  right: 40%;
+}
 
 @keyframes nodeFloat {
-  0%, 100% { 
+
+  0%,
+  100% {
     transform: translateY(0px) scale(1);
     opacity: 0.6;
   }
-  50% { 
+
+  50% {
     transform: translateY(-30px) scale(1.2);
     opacity: 1;
   }
@@ -84,9 +110,9 @@
 }
 
 .title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 700;
-  background: linear-gradient(135deg, #22c55e 0%, #3b82f6 50%, #16a34a 100%);
+  background: #ffffff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,13 +123,14 @@
 }
 
 .subtitle {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 100%;
+  margin: 0;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  line-height: 1.6;
 }
 
 .slideUp {
@@ -113,10 +140,36 @@
 
 /* Content */
 .content {
+  display: grid;
+  grid-template-columns: minmax(350px, 400px) 1fr;
+  gap: 6rem;
+  align-items: start;
   position: relative;
   z-index: 100;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.sectionHeader {
+  text-align: left;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
 }
 
 /* Timeline */
@@ -128,56 +181,50 @@
   position: relative;
   margin-bottom: 3rem;
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .timelineItem.slideIn {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
   transition-delay: var(--delay, 0s);
 }
 
 .timelineItem:nth-child(even) {
-  transform: translateX(50px);
+  transform: translateY(30px);
 }
 
 .timelineItem:nth-child(even).slideIn {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /* Timeline Marker */
 .timelineMarker {
   position: absolute;
-  left: 50%;
+  left: 1.5rem;
   top: 2rem;
   transform: translateX(-50%);
   z-index: 3;
 }
 
 .markerDot {
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+  width: 12px;
+  height: 12px;
+  background: var(--color-primary);
   border-radius: 50%;
-  border: 4px solid #0f172a;
-  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3); }
-  50% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0.2); }
+  border: 3px solid #08090a;
+  box-shadow: none;
 }
 
 .markerLine {
   position: absolute;
   top: 20px;
-  left: 50%;
+  left: 1.5rem;
   transform: translateX(-50%);
-  width: 2px;
-  height: 100px;
-  background: linear-gradient(180deg, rgba(34, 197, 94, 0.3) 0%, transparent 100%);
+  width: 1px;
+  height: calc(100% + 3rem);
+  background: var(--color-border);
 }
 
 .timelineItem:last-child .markerLine {
@@ -187,30 +234,23 @@
 /* Organization Card */
 .organizationCard {
   position: relative;
-  background: rgba(15, 23, 42, 0.9);
-  border-radius: 20px;
-  border: 2px solid rgba(34, 197, 94, 0.5);
+  background: rgba(8, 9, 10, 0.6);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
   padding: 2rem;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
   overflow: hidden;
-  width: calc(50% - 40px);
-  margin-left: auto;
+  width: auto;
+  margin-left: 3.5rem;
   z-index: 50;
 }
 
-.timelineItem:nth-child(even) .organizationCard {
-  margin-left: 0;
-  margin-right: auto;
-}
-
 .organizationCard:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: rgba(34, 197, 94, 0.5);
-  box-shadow: 
-    0 25px 50px rgba(34, 197, 94, 0.1),
-    0 0 0 1px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
 }
 
 .organizationCard:hover .cardGlow {
@@ -223,8 +263,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
-  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border-radius: var(--border-radius-md);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -242,20 +282,32 @@
 .orgIcon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--border-radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  border: 1px solid var(--color-border);
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.organizationCard:hover .orgIcon {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--color-primary);
 }
 
 .orgLogo {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 2px;
+  filter: grayscale(1) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.organizationCard:hover .orgLogo {
+  filter: grayscale(0) opacity(1);
 }
 
 .orgInfo {
@@ -285,7 +337,8 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.startDate, .endDate {
+.startDate,
+.endDate {
   font-weight: 500;
 }
 
@@ -323,8 +376,17 @@
 }
 
 @keyframes pulseGreen {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(1.2); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
 }
 
 /* Card Content */

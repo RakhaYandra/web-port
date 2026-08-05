@@ -4,10 +4,7 @@
   position: relative;
   width: 100%;
   padding: 6rem max(2rem, calc((100% - 1400px) / 2));
-  background: 
-    radial-gradient(ellipse 800px 600px at 10% 20%, rgba(34, 197, 94, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 600px 400px at 90% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-    linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 30%, #16213e 70%, #0f0f1a 100%);
+  background: transparent;
   overflow: hidden;
   z-index: 1;
 }
@@ -31,7 +28,7 @@
 
 .shape {
   position: absolute;
-  background: linear-gradient(45deg, rgba(34, 197, 94, 0.15), rgba(59, 130, 246, 0.15));
+  background: none;
   border-radius: 50%;
   animation: float var(--duration, 12s) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
@@ -102,19 +99,26 @@
 
 /* Section Header */
 .sectionHeader {
-  text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  text-align: left;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 6rem;
   z-index: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  .sectionHeader {
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 3rem);
   font-weight: 700;
-  background: linear-gradient(135deg, #22c55e 0%, #3b82f6 50%, #16a34a 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(30px);
@@ -122,13 +126,14 @@
 }
 
 .subtitle {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 100%;
+  margin: 0;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  line-height: 1.6;
 }
 
 .slideUp {
@@ -138,30 +143,42 @@
 
 /* Content */
 .content {
+  display: grid;
+  grid-template-columns: minmax(350px, 400px) 1fr;
+  gap: 6rem;
+  align-items: start;
   position: relative;
   z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
 .certificatesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Certificate Card */
 .certificateCard {
   position: relative;
-  background: rgba(15, 23, 42, 0.8);
-  border-radius: 20px;
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  background: rgba(8, 9, 10, 0.6);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
   padding: 1.75rem;
   cursor: pointer;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   overflow: hidden;
   height: 400px; /* Optimized height for better proportions */
   display: flex;
@@ -175,11 +192,9 @@
 }
 
 .certificateCard:hover {
-  transform: translateY(-8px);
-  border-color: rgba(34, 197, 94, 0.4);
-  box-shadow: 
-    0 20px 40px rgba(34, 197, 94, 0.1),
-    0 0 0 1px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
 }
 
 .certificateCard:hover .cardGlow {
@@ -192,8 +207,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
-  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border-radius: var(--border-radius-md);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -210,19 +225,31 @@
 .certificateIcon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--border-radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.certificateCard:hover .certificateIcon {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--color-primary);
 }
 
 .organizationLogo {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 2px;
+  filter: grayscale(1) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.certificateCard:hover .organizationLogo {
+  filter: grayscale(0) opacity(1);
 }
 
 /* Card Content */

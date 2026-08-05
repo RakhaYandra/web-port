@@ -10,6 +10,7 @@
     "url": "https://ieeexplore.ieee.org/document/11157609",
     "keywords": ["Air Quality Monitoring", "API Performance", "Backend System", "IoT", "Machine Learning"],
     "status": "Published",
-    "imageSrc": "publications/conference.png"
+    "imageSrc": "publications/conference.png",
+    "takeaway": "Engineered a high-performance backend architecture combining Laravel and Python (Flask) microservices, achieving an average response time of 557ms for IoT-based real-time data processing. Deployed Agile methodologies to deliver a functional product reviewed by government environmental agencies."
   }
 ]

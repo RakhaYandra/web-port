@@ -94,36 +94,36 @@ export const Publications = () => {
         </div>
       </div>
 
-      <div className={styles.sectionHeader}>
-        <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
-          Research Publications
-        </h2>
-        <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
-          Contributing to knowledge through peer-reviewed research and academic
-          discourse
-        </p>
-      </div>
-
-      {/* Filter Tabs */}
-      <div
-        className={`${styles.filterContainer} ${
-          isVisible ? styles.slideUp : ""
-        }`}
-      >
-        {getPublicationTypes().map((type, id) => (
-          <button
-            key={id}
-            className={`${styles.filterTab} ${
-              filterType === type ? styles.active : ""
-            }`}
-            onClick={() => setFilterType(type)}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
-
       <div className={styles.content}>
+        <div className={styles.sectionHeader}>
+          <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
+            Research Publications
+          </h2>
+          <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
+            Contributing to knowledge through peer-reviewed research and academic
+            discourse
+          </p>
+          
+          {/* Filter Tabs */}
+          <div
+            className={`${styles.filterContainer} ${
+              isVisible ? styles.slideUp : ""
+            }`}
+          >
+            {getPublicationTypes().map((type, id) => (
+              <button
+                key={id}
+                className={`${styles.filterTab} ${
+                  filterType === type ? styles.active : ""
+                }`}
+                onClick={() => setFilterType(type)}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className={styles.publicationsGrid}>
           {filteredPublications.map((publication, id) => (
             <div
@@ -160,7 +160,7 @@ export const Publications = () => {
                     <span
                       key={authorId}
                       className={`${styles.author} ${
-                        author === "Rakha Yandra" ? styles.primaryAuthor : ""
+                        author.includes("Rakha") ? styles.primaryAuthor : ""
                       }`}
                     >
                       {author}
@@ -263,7 +263,7 @@ export const Publications = () => {
                       <span
                         key={id}
                         className={`${styles.modalAuthor} ${
-                          author === "Rakha Yandra"
+                          author.includes("Rakha")
                             ? styles.modalPrimaryAuthor
                             : ""
                         }`}
@@ -301,6 +301,13 @@ export const Publications = () => {
                   </div>
                 </div>
               </div>
+
+              {selectedPublication.takeaway && (
+                <div className={styles.modalTakeaway}>
+                  <h4>Key Takeaway / Technical Impact</h4>
+                  <p className={styles.takeawayText}>{selectedPublication.takeaway}</p>
+                </div>
+              )}
 
               <div className={styles.modalAbstract}>
                 <h4>Abstract</h4>

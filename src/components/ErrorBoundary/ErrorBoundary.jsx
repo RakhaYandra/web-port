@@ -7,6 +7,7 @@ class ErrorBoundary extends React.Component {
     this.state = { hasError: false, error: null, errorInfo: null };
   }
 
+  // eslint-disable-next-line no-unused-vars
   static getDerivedStateFromError(error) {
     // Update state so the next render will show the fallback UI
     return { hasError: true };
@@ -14,6 +15,7 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     // Log error details for debugging
+    // eslint-disable-next-line no-console
     console.error("Error caught by ErrorBoundary:", error, errorInfo);
     this.setState({
       error: error,
@@ -33,7 +35,7 @@ class ErrorBoundary extends React.Component {
             <div className={styles.errorIcon}>⚠️</div>
             <h2 className={styles.errorTitle}>Oops! Something went wrong</h2>
             <p className={styles.errorDescription}>
-              We're sorry, but something unexpected happened. Please try
+              We&apos;re sorry, but something unexpected happened. Please try
               refreshing the page.
             </p>
 

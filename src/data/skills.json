@@ -1,27 +1,20 @@
 {
   "categories": {
-    "Frontend": [
-      {
-        "title": "HTML",
-        "imageSrc": "skills/html.png",
-        "proficiency": 75
-      },
-      {
-        "title": "CSS",
-        "imageSrc": "skills/css.png",
-        "proficiency": 70
-      },
+    "Development": [
       {
         "title": "React",
         "imageSrc": "skills/react.png",
-        "proficiency": 65
-      }
-    ],
-    "Backend": [
+        "proficiency": 80
+      },
       {
-        "title": "Node",
-        "imageSrc": "skills/node.png",
-        "proficiency": 75
+        "title": "JavaScript",
+        "imageSrc": "skills/javascript.png",
+        "proficiency": 85
+      },
+      {
+        "title": "Golang",
+        "imageSrc": "skills/go.png",
+        "proficiency": 70
       },
       {
         "title": "PHP",
@@ -36,23 +29,55 @@
       {
         "title": "Python",
         "imageSrc": "skills/python.png",
-        "proficiency": 70
+        "proficiency": 75
       },
       {
-        "title": "JavaScript",
-        "imageSrc": "skills/javascript.png",
-        "proficiency": 70
+        "title": "HTML",
+        "imageSrc": "skills/html.png",
+        "proficiency": 90
+      },
+      {
+        "title": "CSS",
+        "imageSrc": "skills/css.png",
+        "proficiency": 85
       }
     ],
-    "Database": [
-      {
-        "title": "MySQL",
-        "imageSrc": "skills/mysql.png",
-        "proficiency": 70
-      },
+    "Databases & DevOps": [
       {
         "title": "PostgreSQL",
         "imageSrc": "skills/postgressql.png",
+        "proficiency": 80
+      },
+      {
+        "title": "MySQL",
+        "imageSrc": "skills/mysql.png",
+        "proficiency": 80
+      },
+      {
+        "title": "SQL Server",
+        "imageSrc": "skills/sqlserver.png",
+        "proficiency": 70
+      },
+      {
+        "title": "Docker",
+        "imageSrc": "skills/docker.png",
+        "proficiency": 70
+      }
+    ],
+    "Systems & Testing": [
+      {
+        "title": "Cypress (QA Testing)",
+        "imageSrc": "skills/cypress.png",
+        "proficiency": 75
+      },
+      {
+        "title": "Swagger (API Docs)",
+        "imageSrc": "skills/swagger.png",
+        "proficiency": 80
+      },
+      {
+        "title": "Figma (UI/UX)",
+        "imageSrc": "skills/figma.png",
         "proficiency": 70
       }
     ],
@@ -60,76 +85,74 @@
       {
         "title": "Git",
         "imageSrc": "skills/git.png",
-        "proficiency": 75
-      },
-      {
-        "title": "Figma",
-        "imageSrc": "skills/figma.png",
-        "proficiency": 60
+        "proficiency": 85
       }
     ]
   },
   "proficiencyOverview": [
     {
-      "category": "Frontend Development",
-      "percentage": 70,
-      "description": "Developing modern, responsive user interfaces"
+      "category": "Software & API Development",
+      "percentage": 82,
+      "description": "Building responsive interfaces and scalable backend microservices."
     },
     {
-      "category": "UI/UX Design",
-      "percentage": 60,
-      "description": "Creating intuitive and beautiful user experiences"
+      "category": "Systems & Business Analysis",
+      "percentage": 78,
+      "description": "Translating business workflows into structured technical specifications."
     },
     {
-      "category": "Backend Development",
-      "percentage": 76,
-      "description": "Building robust server-side applications"
+      "category": "QA & Test Automation",
+      "percentage": 75,
+      "description": "Writing end-to-end testing scripts and ensuring product stability."
     },
     {
       "category": "Database Management",
-      "percentage": 70,
-      "description": "Designing and optimizing database structures"
+      "percentage": 80,
+      "description": "Designing schemas and optimizing complex SQL queries."
     }
   ],
   "techCloud": [
     "React",
     "JavaScript",
     "Node.js",
-    "CSS3",
-    "HTML5",
-    "PHP",
-    "MySQL",
-    "Git",
-    "Figma",
+    "Golang",
     "Laravel",
+    "PHP",
     "Python",
-    "PostgreSQL"
+    "PostgreSQL",
+    "MySQL",
+    "SQL Server",
+    "Docker",
+    "Cypress",
+    "Swagger",
+    "Git",
+    "Figma"
   ],
   "currentlyLearning": [
     {
-      "title": "Go (Golang)",
-      "imageSrc": "skills/go.png",
-      "description": "Learning Go for backend development and microservices",
-      "progress": 45,
+      "title": "Cloud Architecture & CI/CD",
+      "imageSrc": "skills/aws.png",
+      "description": "Exploring cloud services (AWS) and automated deployment pipelines.",
+      "progress": 65,
       "status": "In Progress",
-      "startDate": "Sept, 2025",
+      "startDate": "Jan, 2026",
       "focusAreas": [
-        "Concurrency",
-        "Microservices",
-        "Performance"
+        "AWS EC2/RDS",
+        "Docker Containers",
+        "GitHub Actions"
       ]
     },
     {
-      "title": "C#",
+      "title": "Enterprise Systems (.NET / C#)",
       "imageSrc": "skills/csharp.png",
-      "description": "Enhancing skills in C# in .NET environment",
-      "progress": 30,
+      "description": "Developing enterprise-grade web applications in .NET environment.",
+      "progress": 50,
       "status": "In Progress",
-      "startDate": "Nov, 2025",
+      "startDate": "Feb, 2026",
       "focusAreas": [
-        "OOP",
-        "ASP.NET",
-        "Entity Framework"
+        "ASP.NET Core",
+        "Entity Framework",
+        "Clean Architecture"
       ]
     }
   ]

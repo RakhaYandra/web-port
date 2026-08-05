@@ -11,9 +11,20 @@ export const Certificates = () => {
   // Sort certificates by date (newest first)
   const sortedCertificates = [...certificates].sort((a, b) => {
     const getDateValue = (dateStr) => {
-      const [month, year] = dateStr.split(" ");
-      const monthIndex = new Date(`${month} 1, ${year}`).getMonth();
-      return new Date(parseInt(year), monthIndex);
+      if (!dateStr || dateStr === "-") return new Date(0);
+      try {
+        const parts = dateStr.trim().split(/\s+/);
+        if (parts.length < 2) return new Date(0);
+        const [month, year] = parts;
+        const monthNames = [
+          "january", "february", "march", "april", "may", "june",
+          "july", "august", "september", "october", "november", "december"
+        ];
+        const monthIndex = monthNames.indexOf(month.toLowerCase());
+        return new Date(parseInt(year), monthIndex >= 0 ? monthIndex : 0);
+      } catch (e) {
+        return new Date(0);
+      }
     };
 
     const dateA = getDateValue(a.date);
@@ -28,7 +39,7 @@ export const Certificates = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     );
 
     if (sectionRef.current) {
@@ -64,16 +75,16 @@ export const Certificates = () => {
         </div>
       </div>
 
-      <div className={styles.sectionHeader}>
-        <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
-          Professional Certifications
-        </h2>
-        <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
-          Validated expertise through industry-recognized credentials
-        </p>
-      </div>
-
       <div className={styles.content}>
+        <div className={styles.sectionHeader}>
+          <h2 className={`${styles.title} ${isVisible ? styles.slideUp : ""}`}>
+            Professional Certifications
+          </h2>
+          <p className={`${styles.subtitle} ${isVisible ? styles.slideUp : ""}`}>
+            Validated expertise through industry-recognized credentials
+          </p>
+        </div>
+
         <div className={styles.certificatesGrid}>
           {sortedCertificates.map((certificate, id) => (
             <div

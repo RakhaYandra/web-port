@@ -1,29 +1,29 @@
 [
   {
     "name": "Keprofesian Enterprise Infrastructure Management (EIM)",
-    "role": "Laboratory Assistant",
+    "role": "Laboratory Assistant & Head of Design",
     "startDate": "March 2023",
     "endDate": "May 2025",
-    "description": "Contributed to lab operations, event documentation, and coordination. Currently serving as Head of Design Subdivision in Human Capital Development Division, managing social media content and visual strategies.",
+    "description": "Co-managed daily operations, research fellowships, and academic logistics for the EIM lab. Led the Design Subdivision within Human Capital Development, supervising a team of 5 members to build branding strategies and coordinate digital media operations.",
     "website": "https://www.instagram.com/eimresearchlab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "achievements": [
-      "Operational Division Staff for EIM",
-      "Documentation and coordination for EIM Research Fellowship Night 2024",
-      "Head of Design Subdivision, Human Capital Development Division"
+      "Directed visual branding and social media strategies as Head of Design, improving lab community engagement.",
+      "Co-managed logistical planning and media coverage for the EIM Research Fellowship Night 2024.",
+      "Facilitated technical training coordination and operational workshops for lab members."
     ],
     "imageSrc": "organizations/eim.png"
   },
   {
     "name": "SEARCH Telkom University",
-    "role": "Member Of Supervisory Board",
+    "role": "Member of Supervisory Board",
     "startDate": "January 2024",
     "endDate": "January 2025",
-    "description": "Oversaw strategic planning and provided guidance to management. Conducted evaluations and facilitated communication to support long-term goals.",
+    "description": "Oversaw strategic operations, audit reviews, and governance compliance for the student research organization. Provided policy recommendations to the executive board to align activities with university guidelines.",
     "website": "https://www.instagram.com/searchtelkomunv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "achievements": [
-      "Provided strategic oversight to new management",
-      "Facilitated board-management communication",
-      "Contributed to organizational policy development"
+      "Mentored and guided 80+ organization members through annual structural transitions.",
+      "Evaluated quarterly work program reports to ensure execution standards and fiscal alignment.",
+      "Resolved cross-division bottlenecks by facilitating communication between board directors and management."
     ],
     "imageSrc": "organizations/search.png"
   },
@@ -32,12 +32,12 @@
     "role": "Head of Logistics Department",
     "startDate": "December 2023",
     "endDate": "December 2024",
-    "description": "Led logistics planning, procurement, and distribution for the organization. Ensured alignment with team goals and improved operational efficiency.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Led inventory control, budget planning, and procurement processes for the university's photography unit. Managed asset distributions for events and exhibitions, optimizing resource availability.",
+    "website": "https://www.instagram.com/fotografitelkom/",
     "achievements": [
-      "Created comprehensive logistics plans",
-      "Aligned logistics operations with organizational goals",
-      "Improved process efficiency through monitoring and evaluation"
+      "Supervised procurement and asset tracking for major university exhibitions, maintaining 100% equipment security.",
+      "Implemented a structured tracking workflow that reduced equipment retrieval errors and asset wear by 20%.",
+      "Formulated comprehensive logistics plans aligning operations with multi-divisional event schedules."
     ],
     "imageSrc": "organizations/uft.png"
   },
@@ -46,12 +46,12 @@
     "role": "Member of Mobile & Web Development Study Group",
     "startDate": "December 2023",
     "endDate": "December 2024",
-    "description": "Participated in workshops and study sessions focusing on mobile and web development using modern tools supported by Google.",
+    "description": "Collaborated with students and industry mentors on web application design patterns and modern frontend frameworks in Google-sponsored workshops.",
     "website": "https://www.instagram.com/gdgoctelkomunivbdg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "achievements": [
-      "Attended hands-on development workshops",
-      "Explored tools for mobile & web development",
-      "Built foundational understanding of development best practices"
+      "Participated in hands-on development workshops, mastering responsive UI coding paradigms.",
+      "Designed and coded mock web modules in study sessions, testing user flows and API integrations.",
+      "Shared tech best practices with fellow group members to raise overall team delivery speed."
     ],
     "imageSrc": "organizations/gdsc.png"
   },
@@ -60,12 +60,12 @@
     "role": "Member of UI/UX Study Group",
     "startDate": "January 2024",
     "endDate": "December 2024",
-    "description": "Joined study group discussions and practice sessions on user interface and user experience design principles.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Studied user-centered design practices, interactive flow mappings, wireframing, and interactive prototyping principles during weekly lab sprints.",
+    "website": "https://www.instagram.com/peopleateisd/",
     "achievements": [
-      "Engaged in UI/UX design sessions",
-      "Learned basic principles of user-centered design",
-      "Participated in design critique and collaboration"
+      "Created wireframes and user journey maps in group design challenges, applying heuristic evaluation models.",
+      "Participated in design critique sessions, refining screen elements based on user feedback guidelines.",
+      "Co-developed UI prototypes, testing consistency across navigation layouts."
     ],
     "imageSrc": "organizations/esd.png"
   },
@@ -74,26 +74,26 @@
     "role": "Human Resources Staff",
     "startDate": "January 2023",
     "endDate": "January 2024",
-    "description": "Managed member recruitment, data collection, performance evaluations, and division coordination to ensure organizational effectiveness.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Coordinated recruitment processes, performance evaluations, and internal engagement strategies for a student body of 80+ members.",
+    "website": "https://www.instagram.com/searchtelkomunv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "achievements": [
-      "Handled cabinet recruitment and data management",
-      "Evaluated team performance regularly",
-      "Improved inter-division collaboration"
+      "Led the screening, interviewing, and onboarding cycle for the SEARCH 2023 member cabinet.",
+      "Administered peer evaluations and performance metrics, delivering reports to the management board.",
+      "Organized training workshops and team-building events to improve inter-divisional collaboration."
     ],
     "imageSrc": "organizations/search.png"
   },
   {
     "name": "UKM Fotografi Telkom University",
-    "role": "Public Relation Staff",
+    "role": "Public Relations Staff & Vice Project Leader",
     "startDate": "January 2023",
     "endDate": "December 2023",
-    "description": "Maintained internal and external communication. Served as Vice Project Leader for Anniversary 2023 and Logistics Staff for Photography Exhibition 2023.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Managed stakeholder communications, media partnerships, and public engagement. Served as Vice Project Leader for the unit's annual anniversary celebration.",
+    "website": "https://www.instagram.com/fotografitelkom/",
     "achievements": [
-      "Vice Project Leader of Photography Unit Anniversary 2023",
-      "Handled logistics for Photography Exhibition 2023",
-      "Built relationships to enhance unit visibility"
+      "Appointed Vice Project Leader of the Anniversary Event, coordinating a committee of 25+ people.",
+      "Secured media partnerships and sponsorship packages, increasing public attendance at exhibitions.",
+      "Maintained internal communications and represented the organization at student council forums."
     ],
     "imageSrc": "organizations/uft.png"
   },
@@ -102,26 +102,26 @@
     "role": "Project Officer",
     "startDate": "January 2023",
     "endDate": "September 2023",
-    "description": "Led the formation and coordination of the organizing committee. Oversaw full-cycle event execution and ensured its overall success.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Served as Project Officer for a national-level business competition. Managed the organizing committee, stakeholder communications, financial planning, and operational execution.",
+    "website": "https://www.instagram.com/jbc_telkomuniv/",
     "achievements": [
-      "Formed and led the organizing committee",
-      "Successfully managed full event cycle",
-      "Strengthened leadership and project management skills"
+      "Formed and directed a 30+ member organizing committee to execute a multi-stage national competition.",
+      "Managed budget forecasting and corporate sponsorships to ensure program funding.",
+      "Coordinated operations across marketing, logistics, and programming, delivering a successful event."
     ],
     "imageSrc": "organizations/jbc.png"
   },
   {
-    "name": "Search Telkom University",
-    "role": "Public Relation Youth Cabinet",
+    "name": "SEARCH Telkom University",
+    "role": "Public Relations Youth Staff & Project Leader",
     "startDate": "September 2022",
     "endDate": "November 2022",
-    "description": "Actively contributed as a youth staff in the Public Relation Division, supported publication and documentation activities for Open Mind SEARCH 2022, and led the Welcoming Search 2022 Committee.",
-    "website": "https://telkomuniversity.ac.id",
+    "description": "Assisted with public communications and publication strategies for SEARCH branding. Appointed Project Leader for the Welcoming SEARCH 2022 onboarding event.",
+    "website": "https://www.instagram.com/searchtelkomunv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     "achievements": [
-      "Served as Public Relation Youth Staff",
-      "Staffed the Publication and Documentation Division for Open Mind SEARCH 2022",
-      "Led the Welcoming Search 2022 Committee as Project Leader"
+      "Led the Welcoming SEARCH 2022 Committee, organizing orientation events for new recruits.",
+      "Co-managed publication schedules and digital assets for the Open Mind SEARCH 2022 campaigns.",
+      "Maintained engagement channels, responding to public and student queries regarding lab applications."
     ],
     "imageSrc": "organizations/search.png"
   }
