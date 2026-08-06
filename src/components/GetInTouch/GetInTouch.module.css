@@ -229,6 +229,14 @@
   margin: 0 auto;
 }
 
+/* Hero Section */
+.heroSection {
+  text-align: left;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 6rem;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
@@ -236,19 +244,11 @@
   }
 
   .heroSection {
-    text-align: center !important;
-    position: relative !important;
-    top: 0 !important;
-    margin-bottom: 2rem !important;
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
   }
-}
-
-/* Hero Section */
-.heroSection {
-  text-align: left;
-  margin-bottom: 3rem;
-  position: sticky;
-  top: 6rem;
 }
 
 .availabilityBadge {

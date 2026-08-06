@@ -118,6 +118,15 @@
   margin: 0 auto;
 }
 
+/* Header Section */
+.header {
+  text-align: left;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+}
+
 @media screen and (max-width: 1024px) {
   .content {
     grid-template-columns: 1fr;
@@ -130,14 +139,6 @@
     top: 0;
     margin-bottom: 2rem;
   }
-}
-
-/* Header Section */
-.header {
-  text-align: left;
-  margin-bottom: 3rem;
-  position: sticky;
-  top: 6rem;
 }
 
 .badge {
