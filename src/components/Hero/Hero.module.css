@@ -620,10 +620,6 @@
     height: 350px;
   }
 
-  .techGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   /* Mobile: static positioning */
   .scrollIndicator {
     position: static;
